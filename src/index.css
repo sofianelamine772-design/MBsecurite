@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #D4AF37;
+  --color-gold-light: #E5C76B;
+  --color-gold-dark: #A3862C;
+  --color-dark: #0A0B0D;
+  --color-dark-card: #14161B;
+  
+  --font-header: "Orbitron", sans-serif;
+  --font-content: "Montserrat", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0B0D;
+}
+::-webkit-scrollbar-thumb {
+  background: #D4AF37;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E5C76B;
+}
+
+@layer base {
+  body {
+    @apply bg-dark text-white font-content overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .nav-blur {
+    @apply backdrop-blur-md bg-black/60 border-b border-white/5;
+  }
+}
