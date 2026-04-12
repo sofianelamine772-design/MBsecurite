@@ -17,8 +17,10 @@ const Navbar = () => {
   }, []);
 
   const menuItems = [
-    { name: 'Nos Services', to: '/services' },
-    { name: 'Zones', to: '/zones-intervention' }
+    { name: 'Services', to: '/services' },
+    { name: 'Zones', to: '/zones-intervention' },
+    { name: 'Recrutement', to: '/recrutement' },
+    { name: 'Statut Légal', to: '/statut-legal' }
   ];
 
   return (
@@ -43,9 +45,9 @@ const Navbar = () => {
                 <span className="absolute -bottom-2 left-0 w-0 h-[2px] bg-gold transition-all duration-300 group-hover:w-full"></span>
               </Link>
             ))}
-            <a href="tel:0668072141" className="bg-gold hover:bg-gold-light text-black px-6 py-3 rounded-sm font-header font-bold text-xs tracking-widest uppercase transition-all flex items-center gap-2 group shadow-[0_0_20px_rgba(212,175,55,0.4)]">
+            <a href="tel:0634394254" className="bg-gold hover:bg-gold-light text-black px-6 py-3 rounded-sm font-header font-bold text-xs tracking-widest uppercase transition-all flex items-center gap-2 group shadow-[0_0_20px_rgba(212,175,55,0.4)]">
               <Phone size={14} className="group-hover:scale-110 transition-transform" />
-              <span>06 68 07 21 41</span>
+              <span>06 34 39 42 54</span>
             </a>
           </div>
 
@@ -74,7 +76,7 @@ const Navbar = () => {
                     {item.name}
                   </Link>
                 ))}
-                <a href="tel:0668072141" className="bg-gold text-black py-4 font-header font-bold text-xs tracking-widest uppercase rounded">
+                <a href="tel:0634394254" className="bg-gold text-black py-4 font-header font-bold text-xs tracking-widest uppercase rounded">
                   Urgence 24/7
                 </a>
               </div>

@@ -107,11 +107,11 @@ const VilleDetail = () => {
                 <div className="bg-white/5 border border-white/5 p-8 rounded-sm sticky top-32">
                     <h4 className="font-header text-sm text-gold mb-8 uppercase tracking-[0.3em]">Contact Direct</h4>
                     <div className="space-y-6">
-                        <a href="tel:0668072141" className="flex items-center gap-4 group">
+                        <a href="tel:0634394254" className="flex items-center gap-4 group">
                             <div className="p-3 bg-gold/10 rounded group-hover:bg-gold transition-all duration-300">
                                 <Phone size={20} className="text-gold group-hover:text-black" />
                             </div>
-                            <span className="font-header text-lg italic group-hover:text-gold transition-all">06 68 07 21 41</span>
+                            <span className="font-header text-lg italic group-hover:text-gold transition-all">06 34 39 42 54</span>
                         </a>
                         <a href="mailto:mbsecurite31@gmail.com" className="flex items-center gap-4 group">
                             <div className="p-3 bg-gold/10 rounded group-hover:bg-gold transition-all duration-300">
@@ -147,9 +147,7 @@ const VilleDetail = () => {
           </div>
         </div>
 
-        <footer className="mt-24 pt-10 border-t border-white/5 opacity-40 text-center text-[10px] font-header tracking-[0.4em] uppercase">
-          MB SÉCURITÉ &copy; 2026 - VOTRE PARTENAIRE À {city.name.toUpperCase()}
-        </footer>
+        {/* Global Footer will be displayed below */}
       </div>
     </div>
   );

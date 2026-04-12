@@ -196,9 +196,9 @@ const Services = () => {
               Nos experts sont à votre disposition pour analyser vos besoins et vous proposer un plan de sécurité adapté.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-6">
-              <a href="tel:0668072141" className="bg-gold text-black px-12 py-5 font-header font-bold tracking-widest uppercase text-xs flex items-center justify-center gap-3 hover:translate-y-[-5px] transition-all shadow-[0_10px_30px_rgba(212,175,55,0.3)]">
+              <a href="tel:0634394254" className="bg-gold text-black px-12 py-5 font-header font-bold tracking-widest uppercase text-xs flex items-center justify-center gap-3 hover:translate-y-[-5px] transition-all shadow-[0_10px_30px_rgba(212,175,55,0.3)]">
                 <Phone size={18} />
-                06 68 07 21 41
+                06 34 39 42 54
               </a>
               <Link to="/zones-intervention" className="border border-white/20 hover:border-gold/50 px-12 py-5 font-header font-bold tracking-widest uppercase text-xs flex items-center justify-center gap-2 transition-all">
                 Nos zones d'intervention
