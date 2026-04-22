@@ -91,11 +91,11 @@ const Recrutement = () => {
               </div>
               <div className="flex-1 w-full">
                  <div className="relative group">
-                    <div className="absolute -inset-2 bg-gold/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                    <div className="absolute -inset-2 bg-gold/20 blur-xl opacity-100 transition-opacity duration-700"></div>
                     <img 
-                      src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?q=80&w=2000&auto=format&fit=crop" 
-                      alt="Professional Ethics" 
-                      className="relative z-10 w-full h-auto grayscale hover:grayscale-0 transition-all duration-1000 border border-white/10 rounded-sm" 
+                      src="/recrutement-dark.png" 
+                      alt="Sérieux et Rigueur MB Sécurité" 
+                      className="relative z-10 w-full h-auto border border-white/10 rounded-sm shadow-2xl" 
                     />
                  </div>
               </div>
