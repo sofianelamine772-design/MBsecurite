@@ -106,6 +106,27 @@ const Home = () => {
                     Consultation
                   </a>
                </div>
+
+               {/* Mini Services Overview Section */}
+               <motion.div 
+                 initial={{ opacity: 0 }}
+                 animate={{ opacity: 1 }}
+                 transition={{ delay: 1, duration: 1 }}
+                 className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 border-t border-white/5 pt-10 max-w-5xl"
+               >
+                  <div className="text-left">
+                    <h5 className="text-gold font-header text-[10px] uppercase tracking-widest mb-2 font-bold italic">Surveillance Humaine</h5>
+                    <p className="text-white/40 text-[9px] uppercase leading-relaxed tracking-wider">Agents qualifiés pour la protection physique de vos sites sensibles et chantiers.</p>
+                  </div>
+                  <div className="text-left md:border-x border-white/5 md:px-8">
+                    <h5 className="text-gold font-header text-[10px] uppercase tracking-widest mb-2 font-bold italic">Sécurité Incendie</h5>
+                    <p className="text-white/40 text-[9px] uppercase leading-relaxed tracking-wider">Expertise SSIAP 1, 2 et 3 pour la prévention et la gestion des risques incendie.</p>
+                  </div>
+                  <div className="text-left">
+                    <h5 className="text-gold font-header text-[10px] uppercase tracking-widest mb-2 font-bold italic">Intervention Mobile</h5>
+                    <p className="text-white/40 text-[9px] uppercase leading-relaxed tracking-wider">Réactivité totale 24h/24 pour levée de doute et patrouilles de dissuasion.</p>
+                  </div>
+               </motion.div>
             </motion.div>
          </div>
       </section>
