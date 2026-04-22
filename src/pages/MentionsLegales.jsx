@@ -24,7 +24,8 @@ const MentionsLegales = () => {
               <li><span className="text-gold font-bold">MB SÉCURITÉ</span></li>
               <li>Forme juridique : SASU</li>
               <li>Siège social : Saint-Gaudens, 31800</li>
-              <li>Numéro SIREN : [En cours d'immatriculation]</li>
+              <li>Numéro SIREN : 99035090200013</li>
+              <li>Agrément CNAPS : <span className="text-gold font-bold">2026-0032214-AGD-ESP-0978198</span></li>
               <li>Directeur de la publication : MB Sécurité</li>
             </ul>
           </section>
@@ -61,7 +62,12 @@ const MentionsLegales = () => {
                 <p className="mb-2 uppercase font-header text-xs tracking-widest text-white/40">Email</p>
                 <p className="text-xl font-header text-gold italic font-bold">mbsecurite31@gmail.com</p>
              </div>
-          </section>section
+          <section>
+            <h2 className="text-2xl font-header text-gold mb-6 uppercase tracking-widest italic">6. RÉGLEMENTATION</h2>
+            <p className="text-lg leading-relaxed border-l-2 border-gold/20 pl-6 italic">
+              L'article L612-14 du code de la sécurité intérieure dispose que : "L'autorisation d'exercice ne confère aucune prérogative de puissance publique à l'entreprise ou aux personnes qui en bénéficient."
+            </p>
+          </section>
         </div>
 
         <footer className="mt-32 pt-10 border-t border-white/5 opacity-40 text-center text-xs font-header tracking-[0.4em] uppercase">

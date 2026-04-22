@@ -204,8 +204,11 @@ const Home = () => {
                   <span className="text-gold font-header text-xl truncate uppercase">mbsecurite31@gmail.com</span>
                </a>
             </div>
-            <div className="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-10">
-               <p className="text-white/20 font-header uppercase tracking-[0.3em] text-[8px] md:text-[10px]">MB SÉCURITÉ - TOUS DROITS RÉSERVÉS - 2026 - SAINT-GAUDENS</p>
+             <div className="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-10 border-t border-white/5 pt-10">
+                <div className="text-left">
+                  <p className="text-white/20 font-header uppercase tracking-[0.3em] text-[8px] md:text-[10px] mb-1">MB SÉCURITÉ - TOUS DROITS RÉSERVÉS - 2026</p>
+                  <p className="text-gold/30 font-header uppercase tracking-[0.2em] text-[7px] md:text-[9px]">Agrément CNAPS n° 2026-0032214-AGD-ESP-0978198</p>
+                </div>
                <div className="flex gap-8">
                   <Link to="/zones-intervention" className="text-gold/40 hover:text-gold transition-all font-header uppercase tracking-[0.3em] text-[8px] md:text-[10px] border-b border-gold/10 pb-1">
                     Zones d'intervention
