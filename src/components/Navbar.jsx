@@ -19,8 +19,7 @@ const Navbar = () => {
   const menuItems = [
     { name: 'Services', to: '/services' },
     { name: 'Zones', to: '/zones-intervention' },
-    { name: 'Recrutement', to: '/recrutement' },
-    { name: 'Statut Légal', to: '/statut-legal' }
+    { name: 'Recrutement', to: '/recrutement' }
   ];
 
   return (

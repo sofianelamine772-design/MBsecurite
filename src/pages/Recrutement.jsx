@@ -86,16 +86,6 @@ const Recrutement = () => {
             title="Sérieux & Rigueur"
             description="Rejoignez une entreprise reconnue pour son professionnalisme et son respect strict des normes de sécurité."
           />
-          <BenefitCard 
-            icon={Trophy}
-            title="Évolution de Carrière"
-            description="Nous privilégions la promotion interne. Développez vos compétences et devenez chef d'équipe ou formateur."
-          />
-          <BenefitCard 
-            icon={Star}
-            title="Équipement Premium"
-            description="Travaillez avec les meilleurs outils et uniformes du marché pour assurer vos missions en toute sérénité."
-          />
         </div>
       </section>
 
@@ -163,7 +153,7 @@ const Recrutement = () => {
                   <div className="p-5 bg-white/5 rounded-full text-gold"><Mail size={24} /></div>
                   <div className="flex flex-col">
                     <span className="text-[10px] uppercase font-bold text-white/30 tracking-widest mb-1">Email</span>
-                    <a href="mailto:mbsecurite31@gmail.com" className="font-header text-lg tracking-widest text-gold font-bold hover:underline">mbsecurite31@gmail.com</a>
+                    <a href="mailto:contact@mbsecurite.fr" className="font-header text-lg tracking-widest text-gold font-bold hover:underline">contact@mbsecurite.fr</a>
                   </div>
                 </div>
               </div>

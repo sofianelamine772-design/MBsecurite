@@ -198,10 +198,10 @@ const Home = () => {
                   <span className="block font-header text-2xl mb-2 uppercase text-white">Appelez-nous</span>
                   <span className="text-gold font-header text-3xl">06 68 07 21 41</span>
                </a>
-               <a href="mailto:mbsecurite31@gmail.com" className="bg-bg-card border border-gold/20 p-10 hover:border-gold transition-all block group">
+               <a href="mailto:contact@mbsecurite.fr" className="bg-bg-card border border-gold/20 p-10 hover:border-gold transition-all block group">
                   <Mail className="mx-auto mb-4 text-gold group-hover:scale-110 transition-all" size={40} />
                   <span className="block font-header text-2xl mb-2 uppercase text-white">Email direct</span>
-                  <span className="text-gold font-header text-xl truncate uppercase">mbsecurite31@gmail.com</span>
+                  <span className="text-gold font-header text-xl truncate uppercase">contact@mbsecurite.fr</span>
                </a>
             </div>
             

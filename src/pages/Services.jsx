@@ -69,7 +69,7 @@ const ServiceSection = ({ title, subtitle, description, icon: Icon, points, imag
               ))}
             </ul>
             <a 
-              href="mailto:mbsecurite31@gmail.com" 
+              href="mailto:contact@mbsecurite.fr" 
               className="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-all font-header text-sm font-bold uppercase tracking-widest border-b border-gold/20 pb-2 group"
             >
               Demander un devis

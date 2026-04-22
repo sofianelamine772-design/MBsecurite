@@ -47,7 +47,7 @@ const MentionsLegales = () => {
           <section>
             <h2 className="text-2xl font-header text-gold mb-6 uppercase tracking-widest italic">4. DONNÉES PERSONNELLES</h2>
             <p className="text-lg leading-relaxed">
-              MB SÉCURITÉ s'engage à ce que la collecte et le traitement de vos données soient conformes au Règlement Général sur la Protection des Données (RGPD). Vous disposez d'un droit d'accès, de rectification et d'opposition aux données vous concernant en nous contactant à : <span className="text-gold">mbsecurite31@gmail.com</span>.
+              MB SÉCURITÉ s'engage à ce que la collecte et le traitement de vos données soient conformes au Règlement Général sur la Protection des Données (RGPD). Vous disposez d'un droit d'accès, de rectification et d'opposition aux données vous concernant en nous contactant à : <span className="text-gold">contact@mbsecurite.fr</span>.
             </p>
           </section>
 
@@ -60,7 +60,7 @@ const MentionsLegales = () => {
                 <p className="mb-2 uppercase font-header text-xs tracking-widest text-white/40">Téléphone</p>
                 <p className="text-2xl font-header text-white mb-6 italic font-bold">06 68 07 21 41</p>
                 <p className="mb-2 uppercase font-header text-xs tracking-widest text-white/40">Email</p>
-                <p className="text-xl font-header text-gold italic font-bold">mbsecurite31@gmail.com</p>
+                <p className="text-xl font-header text-gold italic font-bold">contact@mbsecurite.fr</p>
              </div>
           </section>
 

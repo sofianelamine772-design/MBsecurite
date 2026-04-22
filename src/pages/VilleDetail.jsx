@@ -113,11 +113,11 @@ const VilleDetail = () => {
                             </div>
                             <span className="font-header text-lg italic group-hover:text-gold transition-all">06 68 07 21 41</span>
                         </a>
-                        <a href="mailto:mbsecurite31@gmail.com" className="flex items-center gap-4 group">
+                        <a href="mailto:contact@mbsecurite.fr" className="flex items-center gap-4 group">
                             <div className="p-3 bg-gold/10 rounded group-hover:bg-gold transition-all duration-300">
                                 <Mail size={20} className="text-gold group-hover:text-black" />
                             </div>
-                            <span className="font-header text-sm opacity-60 group-hover:opacity-100 group-hover:text-gold transition-all">mbsecurite31@gmail.com</span>
+                            <span className="font-header text-sm opacity-60 group-hover:opacity-100 group-hover:text-gold transition-all">contact@mbsecurite.fr</span>
                         </a>
                     </div>
                     <div className="mt-10 pt-10 border-t border-white/5">
