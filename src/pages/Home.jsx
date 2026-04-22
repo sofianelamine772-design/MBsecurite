@@ -129,6 +129,40 @@ const Home = () => {
                </motion.div>
             </motion.div>
          </div>
+
+         {/* New Alarm & Remote Monitoring Section */}
+         <section className="relative py-24 md:py-32 bg-dark-card border-y border-white/5 overflow-hidden">
+            <div className="container mx-auto px-6 relative z-10 max-w-4xl text-center">
+               <motion.div
+                 initial={{ opacity: 0, y: 20 }}
+                 whileInView={{ opacity: 1, y: 0 }}
+                 viewport={{ once: true }}
+                 transition={{ duration: 0.8 }}
+               >
+                  <h2 className="text-3xl md:text-5xl font-header font-bold italic uppercase mb-12 text-white leading-tight">
+                    Protégez-vous avec un <br/><span className="gold-text-gradient">système d’alarme avec télésurveillance</span>
+                  </h2>
+                  
+                  <div className="space-y-10 text-white/50 font-header uppercase tracking-[0.2em] text-[10px] md:text-xs leading-relaxed">
+                     <p>
+                        La sécurité de votre habitation et de vos proches est un enjeu crucial. MB SÉCURITÉ vous accompagne avec l'installation d'alarme avec télésurveillance. Nous vous proposons une gamme d’appareils de sécurité pour vous protéger contre les risques du quotidien : tentative d’intrusion, actes de vandalisme, dégagement de fumée, fuite d’eau, urgence médicale etc...
+                     </p>
+                     
+                     <p className="border-y border-white/5 py-10">
+                        Notre centre de télésurveillance réagit au moindre déclenchement d'alarme 24h/24 et 7j/7, même si vous n’êtes pas sur place pour prévenir les services d’urgence, grâce à notre numéro réservé, offrir une vérification par image et gagner ainsi des secondes vitales.
+                     </p>
+                     
+                     <p>
+                        Vous aurez également la possibilité de contrôler votre système d'alarme à distance depuis notre application mobile dédiée : intuitive et simple d’emploi, elle permet d’activer et désactiver vos alarmes, de prendre des photos pendant votre absence, d’être informé en temps réel si les portes et fenêtres sont ouvertes.
+                     </p>
+                  </div>
+                  
+                  <div className="mt-16 flex justify-center">
+                     <div className="w-16 h-1 bg-gold/30"></div>
+                  </div>
+               </motion.div>
+            </div>
+         </section>
       </section>
 
       {/* Services Section - Inspired by the PDF Cover */}
