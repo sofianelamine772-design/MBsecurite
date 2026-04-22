@@ -87,13 +87,13 @@ const Home = () => {
                <div className="mb-4">
                   <span className="inline-block px-4 py-1 border border-gold/30 text-gold text-[8px] md:text-[10px] font-header uppercase tracking-[0.4em] mb-4 bg-gold/5">Saint-Gaudens & Occitanie</span>
                </div>
-               <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-[140px] font-header font-bold leading-[0.8] mb-8 italic tracking-tighter uppercase">
+               <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-[140px] font-header font-bold leading-[0.8] mb-8 italic tracking-tighter uppercase text-white">
                   VOTRE <br />
                   <span className="gold-text-gradient">SÉCURITÉ</span>
                </h1>
                <div className="flex gap-4 items-center mb-10 w-full justify-center">
                   <div className="h-[1px] flex-1 max-w-[50px] bg-gold/30"></div>
-                  <p className="text-secondary max-w-sm font-header uppercase tracking-[0.2em] text-[10px] md:text-sm lg:text-base opacity-80 leading-relaxed">
+                  <p className="text-secondary max-w-sm font-header uppercase tracking-[0.2em] text-[10px] md:text-sm lg:text-base opacity-80 leading-relaxed text-white/60">
                     Leader régional de la surveillance humaine et du gardiennage
                   </p>
                   <div className="h-[1px] flex-1 max-w-[50px] bg-gold/30"></div>
@@ -102,7 +102,7 @@ const Home = () => {
                   <Link to="/services" className="gold-gradient text-black px-10 py-4 font-header font-bold tracking-[0.2em] uppercase text-xs hover:translate-y-[-5px] transition-all shadow-[0_10px_30px_rgba(255,215,0,0.3)]">
                     Nos Solutions
                   </Link>
-                  <a href="#contact" className="border-2 border-white/20 hover:border-white/60 bg-transparent px-10 py-4 font-header font-bold tracking-[0.2em] uppercase text-xs transition-all hover:bg-white/5">
+                  <a href="#contact" className="border-2 border-white/20 hover:border-white/60 bg-transparent px-10 py-4 font-header font-bold tracking-[0.2em] uppercase text-xs transition-all hover:bg-white/5 text-white">
                     Consultation
                   </a>
                </div>
@@ -129,40 +129,40 @@ const Home = () => {
                </motion.div>
             </motion.div>
          </div>
+      </section>
 
-         {/* New Alarm & Remote Monitoring Section */}
-         <section className="relative py-24 md:py-32 bg-dark-card border-y border-white/5 overflow-hidden">
-            <div className="container mx-auto px-6 relative z-10 max-w-4xl text-center">
-               <motion.div
-                 initial={{ opacity: 0, y: 20 }}
-                 whileInView={{ opacity: 1, y: 0 }}
-                 viewport={{ once: true }}
-                 transition={{ duration: 0.8 }}
-               >
-                  <h2 className="text-3xl md:text-5xl font-header font-bold italic uppercase mb-12 text-white leading-tight">
-                    Protégez-vous avec un <br/><span className="gold-text-gradient">système d’alarme avec télésurveillance</span>
-                  </h2>
+      {/* New Alarm & Remote Monitoring Section - NOW OUTSIDE HERO */}
+      <section className="relative py-24 md:py-32 bg-dark-card border-y border-white/5 overflow-hidden">
+        <div className="container mx-auto px-6 relative z-10 max-w-4xl text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+            >
+              <h2 className="text-3xl md:text-5xl font-header font-bold italic uppercase mb-12 text-white leading-tight">
+                Protégez-vous avec un <br/><span className="gold-text-gradient">système d’alarme avec télésurveillance</span>
+              </h2>
+              
+              <div className="space-y-10 text-white/50 font-header uppercase tracking-[0.2em] text-[10px] md:text-xs leading-relaxed">
+                  <p>
+                    La sécurité de votre habitation et de vos proches est un enjeu crucial. MB SÉCURITÉ vous accompagne avec l'installation d'alarme avec télésurveillance. Nous vous proposons une gamme d’appareils de sécurité pour vous protéger contre les risques du quotidien : tentative d’intrusion, actes de vandalisme, dégagement de fumée, fuite d’eau, urgence médicale etc...
+                  </p>
                   
-                  <div className="space-y-10 text-white/50 font-header uppercase tracking-[0.2em] text-[10px] md:text-xs leading-relaxed">
-                     <p>
-                        La sécurité de votre habitation et de vos proches est un enjeu crucial. MB SÉCURITÉ vous accompagne avec l'installation d'alarme avec télésurveillance. Nous vous proposons une gamme d’appareils de sécurité pour vous protéger contre les risques du quotidien : tentative d’intrusion, actes de vandalisme, dégagement de fumée, fuite d’eau, urgence médicale etc...
-                     </p>
-                     
-                     <p className="border-y border-white/5 py-10">
-                        Notre centre de télésurveillance réagit au moindre déclenchement d'alarme 24h/24 et 7j/7, même si vous n’êtes pas sur place pour prévenir les services d’urgence, grâce à notre numéro réservé, offrir une vérification par image et gagner ainsi des secondes vitales.
-                     </p>
-                     
-                     <p>
-                        Vous aurez également la possibilité de contrôler votre système d'alarme à distance depuis notre application mobile dédiée : intuitive et simple d’emploi, elle permet d’activer et désactiver vos alarmes, de prendre des photos pendant votre absence, d’être informé en temps réel si les portes et fenêtres sont ouvertes.
-                     </p>
-                  </div>
+                  <p className="border-y border-white/5 py-10">
+                    Notre centre de télésurveillance réagit au moindre déclenchement d'alarme 24h/24 et 7j/7, même si vous n’êtes pas sur place pour prévenir les services d’urgence, grâce à notre numéro réservé, offrir une vérification par image et gagner ainsi des secondes vitales.
+                  </p>
                   
-                  <div className="mt-16 flex justify-center">
-                     <div className="w-16 h-1 bg-gold/30"></div>
-                  </div>
-               </motion.div>
-            </div>
-         </section>
+                  <p>
+                    Vous aurez également la possibilité de contrôler votre système d'alarme à distance depuis notre application mobile dédiée : intuitive et simple d’emploi, elle permet d’activer et désactiver vos alarmes, de prendre des photos pendant votre absence, d’être informé en temps réel si les portes et fenêtres sont ouvertes.
+                  </p>
+              </div>
+              
+              <div className="mt-16 flex justify-center">
+                  <div className="w-16 h-1 bg-gold/30"></div>
+              </div>
+            </motion.div>
+        </div>
       </section>
 
       {/* Services Section - Inspired by the PDF Cover */}
@@ -171,9 +171,9 @@ const Home = () => {
          <div className="absolute top-0 right-0 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-gold/5 blur-[120px] rounded-full"></div>
          
          <div className="container mx-auto px-6 relative z-10">
-            <div className="flex flex-col items-center mb-16 md:mb-32 text-center text-black">
+            <div className="flex flex-col items-center mb-16 md:mb-32 text-center">
                <h2 className="text-gold font-header text-[10px] tracking-[0.5em] uppercase mb-4">Architecture de Défense</h2>
-               <h3 className="text-3xl md:text-6xl font-header font-bold uppercase mb-4 italic leading-tight text-white">Solutions de <br/> <span className="gold-text-gradient">Surveillance Humaine</span></h3>
+               <h3 className="text-3xl md:text-6xl font-header font-bold uppercase mb-4 italic leading-tight text-white">Solutions de <br/> <span className="gold-text-gradient text-white">Surveillance Humaine</span></h3>
                <div className="w-20 md:w-32 h-[2px] bg-gradient-to-r from-transparent via-gold to-transparent"></div>
             </div>
 
@@ -268,6 +268,9 @@ const Home = () => {
                 <div className="flex gap-8">
                   <Link to="/zones-intervention" className="text-gold/40 hover:text-gold transition-all font-header uppercase tracking-[0.3em] text-[8px] md:text-[10px] border-b border-gold/10 pb-1">
                     Zones d'intervention
+                  </Link>
+                  <Link to="/statut-legal" className="text-gold/40 hover:text-gold transition-all font-header uppercase tracking-[0.3em] text-[8px] md:text-[10px] border-b border-gold/10 pb-1">
+                    Statut Légal
                   </Link>
                   <Link to="/mentions-legales" className="text-gold/40 hover:text-gold transition-all font-header uppercase tracking-[0.3em] text-[8px] md:text-[10px] border-b border-gold/10 pb-1">
                     Mentions Légales
