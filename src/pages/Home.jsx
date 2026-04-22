@@ -191,7 +191,7 @@ const Home = () => {
       {/* CTA Footer */}
       <section id="contact" className="py-40 bg-black relative">
          <div className="container mx-auto px-6 text-center max-w-4xl">
-            <h4 className="text-5xl md:text-7xl font-header font-bold mb-10 italic uppercase text-white">Prêt à sécuriser <br/>votre <span className="gold-text-gradient underline decoration-gold/30 underline-offset-8">patrimoine</span> ?</h4>
+            <h4 className="text-5xl md:text-7xl font-header font-bold mb-10 italic uppercase text-white">VOTRE SÉCURITÉ <br/><span className="gold-text-gradient underline decoration-gold/30 underline-offset-8">NOTRE MISSION</span></h4>
             <div className="grid md:grid-cols-2 gap-8 mb-16">
                <a href="tel:0668072141" className="bg-bg-card border border-gold/20 p-10 hover:border-gold transition-all block group">
                   <Phone className="mx-auto mb-4 text-gold group-hover:scale-110 transition-all" size={40} />
