@@ -262,7 +262,7 @@ const Services = () => {
             viewport={{ once: true }}
             className="max-w-4xl mx-auto"
           >
-            <h2 className="text-4xl md:text-6xl font-header font-bold mb-10 italic uppercase">
+            <h2 className="text-4xl md:text-6xl font-header font-bold mb-10 italic uppercase text-white">
               Besoin d'une solution <br/> <span className="gold-text-gradient">particulière</span> ?
             </h2>
             <p className="text-white/60 mb-12 text-lg">
