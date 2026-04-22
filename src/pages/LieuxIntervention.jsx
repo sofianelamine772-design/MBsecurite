@@ -38,11 +38,7 @@ const cities = [
   "Toulouse", "Colomiers", "Tournefeuille", "Blagnac", "Muret",
   "Plaisance-du-Touch", "Cugnaux", "Balma", "L'Union", "Castanet-Tolosan",
   "Saint-Orens-de-Gameville", "Saint-Gaudens", "Revel", "Auterive", "Léguevin",
-  "Fonsorbes", "Grenade", "Castelginest", "Villeneuve-Tolosane", "Pibrac",
-  "Montréjeau", "Lannemezan", "Trie-sur-Baïse", "Boulogne-sur-Gesse", "Saint-Blancard",
-  "Arreau", "Saint-Lary-Soulan", "Loudenvielle", "Bagnères-de-Bigorre", "Bagnères-de-Luchon",
-  "Saint-Béat", "Aspet", "Salies-du-Salat", "Foix", "Saint-Girons",
-  "Aurignac", "Martres-Tolosane", "Cazères"
+  "Fonsorbes", "Grenade", "Castelginest", "Villeneuve-Tolosane", "Pibrac"
 ];
 
 const LieuxIntervention = () => {
@@ -86,7 +82,7 @@ const LieuxIntervention = () => {
                 Parce que chaque mission est unique, nos tarifs sont adaptés en fonction du lieu d'intervention et de la distance parcourue depuis nos bases. Nous couvrons **le 31 sans exception** pour garantir votre protection.
               </p>
             </div>
-            <a href="tel:0634394254" className="bg-gold hover:bg-white text-black px-10 py-5 rounded-sm font-header font-bold text-xs tracking-[0.2em] uppercase transition-all shadow-[0_0_30px_rgba(212,175,55,0.2)]">
+            <a href="tel:0668072141" className="bg-gold hover:bg-white text-black px-10 py-5 rounded-sm font-header font-bold text-xs tracking-[0.2em] uppercase transition-all shadow-[0_0_30px_rgba(212,175,55,0.2)]">
               Demander un devis
             </a>
           </div>
@@ -150,7 +146,9 @@ const LieuxIntervention = () => {
           </p>
         </div>
 
-        {/* Global Footer will be displayed below */}
+        <footer className="mt-24 pt-10 border-t border-white/5 opacity-40 text-center text-[10px] font-header tracking-[0.4em] uppercase">
+          MB SÉCURITÉ &copy; 2026 - VIGILANCE TOTALE SUR LE 31
+        </footer>
       </div>
     </div>
   );
