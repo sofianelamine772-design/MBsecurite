@@ -193,10 +193,10 @@ const Home = () => {
          <div className="container mx-auto px-6 text-center max-w-4xl">
             <h4 className="text-5xl md:text-7xl font-header font-bold mb-10 italic uppercase text-white">Prêt à sécuriser <br/>votre <span className="gold-text-gradient underline decoration-gold/30 underline-offset-8">patrimoine</span> ?</h4>
             <div className="grid md:grid-cols-2 gap-8 mb-16">
-               <a href="tel:0634394254" className="bg-bg-card border border-gold/20 p-10 hover:border-gold transition-all block group">
+               <a href="tel:0668072141" className="bg-bg-card border border-gold/20 p-10 hover:border-gold transition-all block group">
                   <Phone className="mx-auto mb-4 text-gold group-hover:scale-110 transition-all" size={40} />
                   <span className="block font-header text-2xl mb-2 uppercase text-white">Appelez-nous</span>
-                  <span className="text-gold font-header text-3xl">06 34 39 42 54</span>
+                  <span className="text-gold font-header text-3xl">06 68 07 21 41</span>
                </a>
                <a href="mailto:mbsecurite31@gmail.com" className="bg-bg-card border border-gold/20 p-10 hover:border-gold transition-all block group">
                   <Mail className="mx-auto mb-4 text-gold group-hover:scale-110 transition-all" size={40} />

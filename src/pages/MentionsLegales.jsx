@@ -58,7 +58,7 @@ const MentionsLegales = () => {
             </p>
              <div className="bg-dark-card border border-gold/20 p-8 rounded-sm">
                 <p className="mb-2 uppercase font-header text-xs tracking-widest text-white/40">Téléphone</p>
-                <p className="text-2xl font-header text-white mb-6 italic font-bold">06 34 39 42 54</p>
+                <p className="text-2xl font-header text-white mb-6 italic font-bold">06 68 07 21 41</p>
                 <p className="mb-2 uppercase font-header text-xs tracking-widest text-white/40">Email</p>
                 <p className="text-xl font-header text-gold italic font-bold">mbsecurite31@gmail.com</p>
              </div>

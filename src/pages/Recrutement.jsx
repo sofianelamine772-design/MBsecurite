@@ -156,7 +156,7 @@ const Recrutement = () => {
                   <div className="p-5 bg-white/5 rounded-full text-gold"><Phone size={24} /></div>
                   <div className="flex flex-col">
                     <span className="text-[10px] uppercase font-bold text-white/30 tracking-widest mb-1">Téléphone</span>
-                    <span className="font-header text-lg tracking-widest text-white font-bold">06 34 39 42 54</span>
+                    <span className="font-header text-lg tracking-widest text-white font-bold">06 68 07 21 41</span>
                   </div>
                 </div>
                 <div className="flex flex-col items-center gap-4 text-white/70">
