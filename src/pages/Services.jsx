@@ -1,7 +1,41 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Shield, Flame, Dog, UserCheck, Bell, Zap, CheckCircle2, ChevronRight, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
+
+const FAQItem = ({ question, answer }) => {
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  return (
+    <div className="border-b border-white/5 last:border-0">
+      <button 
+        onClick={() => setIsOpen(!isOpen)}
+        className="w-full py-6 flex justify-between items-center text-left group"
+      >
+        <span className="font-header text-sm md:text-base uppercase tracking-wider group-hover:text-gold transition-colors text-white">
+          {question}
+        </span>
+        <div className={`transition-transform duration-300 ${isOpen ? 'rotate-45 text-gold' : 'text-white/40'}`}>
+          <Zap size={20} />
+        </div>
+      </button>
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            className="overflow-hidden"
+          >
+            <p className="pb-8 text-white/60 text-sm leading-relaxed max-w-3xl">
+              {answer}
+            </p>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};
 
 const ServiceSection = ({ title, subtitle, description, icon: Icon, points, image, reverse = false }) => {
   return (
@@ -82,7 +116,7 @@ const Services = () => {
         "Exploitation du SSI",
         "Alerte et évacuation"
       ],
-      image: "/incendie-premium.png"
+      image: "/incendie-custom.jpg"
     },
     {
       title: "Gardiennage",
@@ -140,6 +174,29 @@ const Services = () => {
     }
   ];
 
+  const faqs = [
+    {
+      question: "Quels services de sécurité proposez-vous à Saint-Gaudens ?",
+      answer: "MB SÉCURITÉ propose une large gamme de services incluant le gardiennage physique, la sécurité incendie (SSIAP), les équipes cynophiles (maître-chien) et l'intervention mobile sur alarme 24h/24 et 7j/7."
+    },
+    {
+      question: "Quelle est votre zone d'intervention en Occitanie ?",
+      answer: "Basés à Saint-Gaudens, nous intervenons dans toute la Haute-Garonne (31), notamment à Toulouse, Muret et Labège, ainsi que dans les départements limitrophes comme les Hautes-Pyrénées (65) et l'Ariège (09)."
+    },
+    {
+      question: "Vos agents SSIAP sont-ils qualifiés ?",
+      answer: "Absolument. Nos agents de sécurité incendie sont tous titulaires des diplômes SSIAP 1, 2 ou 3. Ils sont formés pour la surveillance des ERP (Établissements Recevant du Public) et des IGH (Immeubles de Grande Hauteur)."
+    },
+    {
+      question: "Pourquoi choisir une équipe cynophile pour la surveillance ?",
+      answer: "L'équipe cynophile est idéale pour la sécurisation de sites industriels ou de chantiers. Le binôme homme-chien offre une force de dissuasion visuelle et sonore inégalée, ainsi qu'une capacité de détection nocturne supérieure."
+    },
+    {
+      question: "En combien de temps intervenez-vous après une alarme ?",
+      answer: "Grâce à nos agents mobiles basés stratégiquement en Occitanie, nous garantissons une intervention rapide pour effectuer une levée de doute physique et sécuriser votre patrimoine immédiatement après le signal d'alarme."
+    }
+  ];
+
   return (
     <div className="bg-dark min-h-screen text-white">
       {/* Services Hero */}
@@ -179,6 +236,22 @@ const Services = () => {
       {allServices.map((service, index) => (
         <ServiceSection key={index} {...service} />
       ))}
+
+      {/* FAQ Section */}
+      <section className="py-24 bg-dark relative">
+        <div className="container mx-auto px-6 max-w-4xl">
+          <div className="text-center mb-16">
+            <h2 className="text-gold font-header text-[10px] tracking-[0.5em] uppercase mb-4">Questions Fréquentes</h2>
+            <h3 className="text-3xl md:text-5xl font-header font-bold uppercase italic text-white">Tout savoir sur <span className="gold-text-gradient">Nos Services</span></h3>
+          </div>
+          
+          <div className="bg-dark-card border border-white/5 p-8 md:p-12 rounded-sm shadow-2xl">
+            {faqs.map((faq, idx) => (
+              <FAQItem key={idx} {...faq} />
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* CTA Section */}
       <section className="py-32 bg-black relative">
