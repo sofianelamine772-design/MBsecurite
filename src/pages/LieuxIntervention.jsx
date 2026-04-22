@@ -79,7 +79,7 @@ const LieuxIntervention = () => {
             <div className="flex-1">
               <h2 className="text-2xl font-header text-gold mb-4 uppercase italic">Tarification Flexible</h2>
               <p className="text-white/60 leading-relaxed max-w-xl">
-                Parce que chaque mission est unique, nos tarifs sont adaptés en fonction du lieu d'intervention et de la distance parcourue depuis nos bases. Nous couvrons **le 31 sans exception** pour garantir votre protection.
+                Parce que chaque mission est unique, nos tarifs sont adaptés en fonction du lieu d'intervention et de la distance parcourue depuis nos bases. Nous couvrons **le 31 sans exception** pour garantir votre surveillance.
               </p>
             </div>
             <a href="tel:0668072141" className="bg-gold hover:bg-white text-black px-10 py-5 rounded-sm font-header font-bold text-xs tracking-[0.2em] uppercase transition-all shadow-[0_0_30px_rgba(212,175,55,0.2)]">

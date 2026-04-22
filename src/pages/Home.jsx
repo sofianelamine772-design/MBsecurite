@@ -94,7 +94,7 @@ const Home = () => {
                <div className="flex gap-4 items-center mb-10 w-full justify-center">
                   <div className="h-[1px] flex-1 max-w-[50px] bg-gold/30"></div>
                   <p className="text-secondary max-w-sm font-header uppercase tracking-[0.2em] text-[10px] md:text-sm lg:text-base opacity-80 leading-relaxed">
-                    Leader régional de la protection et du gardiennage
+                    Leader régional de la surveillance humaine et du gardiennage
                   </p>
                   <div className="h-[1px] flex-1 max-w-[50px] bg-gold/30"></div>
                </div>
@@ -118,7 +118,7 @@ const Home = () => {
          <div className="container mx-auto px-6 relative z-10">
             <div className="flex flex-col items-center mb-16 md:mb-32 text-center text-black">
                <h2 className="text-gold font-header text-[10px] tracking-[0.5em] uppercase mb-4">Architecture de Défense</h2>
-               <h3 className="text-3xl md:text-6xl font-header font-bold uppercase mb-4 italic leading-tight text-white">Solutions de <br/> <span className="gold-text-gradient">Protection Intégrée</span></h3>
+               <h3 className="text-3xl md:text-6xl font-header font-bold uppercase mb-4 italic leading-tight text-white">Solutions de <br/> <span className="gold-text-gradient">Surveillance Humaine</span></h3>
                <div className="w-20 md:w-32 h-[2px] bg-gradient-to-r from-transparent via-gold to-transparent"></div>
             </div>
 

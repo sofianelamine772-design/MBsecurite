@@ -5,7 +5,7 @@ export const citiesData = {
     seoContent: "Nos agents interviennent sur l'ensemble de la métropole toulousaine pour des missions de surveillance physique et d'intervention sur alarme.",
     faqs: [
       { q: "Délai d'intervention à Toulouse ?", a: "Réponse en moins de 30 minutes sur la métropole toulousaine." },
-      { q: "Surveillez-vous les chantiers ?", a: "Oui, protection contre le vol et le vandalisme sur tous les quartiers." },
+      { q: "Surveillez-vous les chantiers ?", a: "Oui, surveillance humaine contre le vol et le vandalisme sur tous les quartiers." },
       { q: "Rondes de nuit disponibles ?", a: "Tout à fait, nous organisons des rondes périmétriques régulières." },
       { q: "Agents SSIAP à Toulouse ?", a: "Absolument, nos agents SSIAP 1, 2 et 3 assurent la sécurité incendie." },
       { q: "Urgence immédiate possible ?", a: "Nous traitons les demandes critiques en moins de 2 heures." }
@@ -62,7 +62,7 @@ export const citiesData = {
   "tournefeuille": {
     name: "Tournefeuille",
     description: "Gardiennage résidentiel à Tournefeuille (31170).",
-    seoContent: "À Tournefeuille, nous misons sur la prévention et la protection du patrimoine immobilier.",
+    seoContent: "À Tournefeuille, nous misons sur la prévention et la surveillance humaine du patrimoine immobilier.",
     faqs: [
       { q: "Surveillance résidentielle ?", a: "Oui, forfaits de surveillance pour pavillons et lotissements." },
       { q: "Gestion alarmes nuit ?", a: "Alerte transmise instantanément à notre agent de garde." },
@@ -113,7 +113,7 @@ export const citiesData = {
     seoContent: "Protection contre le cambriolage pour particuliers et professionnels à L'Union.",
     faqs: [
       { q: "Vitesse d'intervention ?", a: "Moins de 15 minutes sur le secteur Nord." },
-      { q: "Surveillance magasins ?", a: "Rondes après fermeture et protection de nuit." },
+      { q: "Surveillance magasins ?", a: "Rondes après fermeture et surveillance humaine de nuit." },
       { q: "Patrouilles préventives ?", a: "Passages réguliers en véhicule logotypé." },
       { q: "Numéro d'urgence 24/7 ?", a: "Ligne directe traitant les alertes immédiates." },
       { q: "Poste de garde temporaire ?", a: "Surveillance fixe suite à sinistre ou effraction." }
@@ -122,7 +122,7 @@ export const citiesData = {
   "castanet-tolosan": {
     name: "Castanet-Tolosan",
     description: "Sécurité commerces à Castanet-Tolosan (31320).",
-    seoContent: "Vérification des accès et protection des locaux techniques à Castanet.",
+    seoContent: "Vérification des accès et surveillance humaine des locaux techniques à Castanet.",
     faqs: [
       { q: "Forfaits résidences ?", a: "Solutions mutualisées pour les copropriétés." },
       { q: "Vérification rideaux fer ?", a: "Point clé de nos rondes commerciales." },
@@ -229,7 +229,7 @@ export const citiesData = {
   },
   "pibrac": {
     name: "Pibrac",
-    description: "Sûreté et protection des biens à Pibrac (31820).",
+    description: "Sûreté et surveillance humaine à Pibrac (31820).",
     seoContent: "Expertise de proximité pour sécuriser Pibrac.",
     faqs: [
       { q: "Surveillance lotissements ?", a: "Rondes mobiles préventives régulières." },

@@ -136,7 +136,7 @@ const Services = () => {
       title: "Équipe Cynophile",
       subtitle: "Conducteur & Chien",
       icon: Dog,
-      description: "Le binôme homme-chien constitue une force de dissuasion inégalée. Nous intervenons pour la protection de sites industriels, de chantiers ou de zones privées sensibles.",
+      description: "Le binôme homme-chien constitue une force de dissuasion inégalée. Nous intervenons pour la surveillance humaine de sites industriels, de chantiers ou de zones privées sensibles.",
       points: [
         "Maîtres-chiens diplômés",
         "Surveillance périmétrique",
@@ -220,7 +220,7 @@ const Services = () => {
             transition={{ duration: 0.8 }}
           >
             <span className="inline-block px-4 py-1 border border-gold/30 text-gold text-[10px] font-header uppercase tracking-[0.4em] mb-6 bg-gold/5">
-              Expertise & Protection
+              Expertise & Surveillance
             </span>
             <h1 className="text-5xl md:text-8xl font-header font-bold italic uppercase tracking-tighter mb-8">
               Nos <span className="gold-text-gradient">Services</span>
