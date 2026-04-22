@@ -8,7 +8,7 @@ const MentionsLegales = () => {
       <div className="container mx-auto px-6 max-w-4xl pt-10">
         <header className="mb-12 md:mb-20">
           <div className="flex items-center gap-4 mb-4">
-             <Shield className="text-gold" size={30} md:size={40} />
+             <Shield className="text-gold" size={30} />
              <div className="h-[1px] flex-grow bg-gold/20"></div>
           </div>
           <h1 className="text-4xl md:text-7xl font-header font-bold italic tracking-tighter uppercase">Mentions <span className="text-gold">Légales</span></h1>
@@ -58,10 +58,12 @@ const MentionsLegales = () => {
             </p>
              <div className="bg-dark-card border border-gold/20 p-8 rounded-sm">
                 <p className="mb-2 uppercase font-header text-xs tracking-widest text-white/40">Téléphone</p>
-                <p className="text-2xl font-header text-white mb-6 italic font-bold">06 68 07 21 41</p>
+                <p className="text-2xl font-header text-white mb-6 italic font-bold">06 34 39 42 54</p>
                 <p className="mb-2 uppercase font-header text-xs tracking-widest text-white/40">Email</p>
                 <p className="text-xl font-header text-gold italic font-bold">mbsecurite31@gmail.com</p>
              </div>
+          </section>
+
           <section>
             <h2 className="text-2xl font-header text-gold mb-6 uppercase tracking-widest italic">6. RÉGLEMENTATION</h2>
             <p className="text-lg leading-relaxed border-l-2 border-gold/20 pl-6 italic">
