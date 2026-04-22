@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 @theme {
-  --color-gold: #D4AF37;
-  --color-gold-light: #E5C76B;
-  --color-gold-dark: #A3862C;
+  --color-gold: #FFD700;
+  --color-gold-light: #FFEA70;
+  --color-gold-dark: #B8860B;
   --color-dark: #0A0B0D;
   --color-dark-card: #14161B;
   
@@ -23,11 +23,11 @@ html {
   background: #0A0B0D;
 }
 ::-webkit-scrollbar-thumb {
-  background: #D4AF37;
+  background: #FFD700;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #E5C76B;
+  background: #FFEA70;
 }
 
 @layer base {
@@ -40,4 +40,17 @@ html {
   .nav-blur {
     @apply backdrop-blur-md bg-black/60 border-b border-white/5;
   }
+  .gold-gradient {
+    background: linear-gradient(135deg, #B8860B 0%, #FFD700 50%, #FFEA70 100%);
+  }
+  .gold-text-gradient {
+    background: linear-gradient(135deg, #B8860B 0%, #FFD700 50%, #FFEA70 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
 }

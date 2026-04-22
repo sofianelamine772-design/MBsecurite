@@ -32,7 +32,7 @@ const Counter = ({ value, suffix = "+" }) => {
   }, [isInView, value]);
 
   return (
-    <span ref={ref} className="text-4xl lg:text-5xl font-header font-bold text-gold inline-block mb-2">
+    <span ref={ref} className="text-4xl lg:text-5xl font-header font-bold gold-text-gradient inline-block mb-2">
       {count.toLocaleString()}{suffix}
     </span>
   );
@@ -87,9 +87,9 @@ const Home = () => {
                <div className="mb-4">
                   <span className="inline-block px-4 py-1 border border-gold/30 text-gold text-[8px] md:text-[10px] font-header uppercase tracking-[0.4em] mb-4 bg-gold/5">Saint-Gaudens & Occitanie</span>
                </div>
-               <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-[140px] font-header font-bold leading-[0.8] mb-8 italic tracking-tighter">
+               <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-[140px] font-header font-bold leading-[0.8] mb-8 italic tracking-tighter uppercase">
                   VOTRE <br />
-                  <span className="text-transparent bg-clip-text bg-gradient-to-b from-gold-light via-gold to-gold-dark">SÉCURITÉ</span>
+                  <span className="gold-text-gradient">SÉCURITÉ</span>
                </h1>
                <div className="flex gap-4 items-center mb-10 w-full justify-center">
                   <div className="h-[1px] flex-1 max-w-[50px] bg-gold/30"></div>
@@ -99,7 +99,7 @@ const Home = () => {
                   <div className="h-[1px] flex-1 max-w-[50px] bg-gold/30"></div>
                </div>
                <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-                  <Link to="/services" className="bg-gold text-black px-10 py-4 font-header font-bold tracking-[0.2em] uppercase text-xs hover:translate-y-[-5px] transition-all shadow-[0_10px_30px_rgba(212,175,55,0.3)]">
+                  <Link to="/services" className="gold-gradient text-black px-10 py-4 font-header font-bold tracking-[0.2em] uppercase text-xs hover:translate-y-[-5px] transition-all shadow-[0_10px_30px_rgba(255,215,0,0.3)]">
                     Nos Solutions
                   </Link>
                   <a href="#contact" className="border-2 border-white/20 hover:border-white/60 bg-transparent px-10 py-4 font-header font-bold tracking-[0.2em] uppercase text-xs transition-all hover:bg-white/5">
@@ -118,7 +118,7 @@ const Home = () => {
          <div className="container mx-auto px-6 relative z-10">
             <div className="flex flex-col items-center mb-16 md:mb-32 text-center text-black">
                <h2 className="text-gold font-header text-[10px] tracking-[0.5em] uppercase mb-4">Architecture de Défense</h2>
-               <h3 className="text-3xl md:text-6xl font-header font-bold uppercase mb-4 italic leading-tight text-white">Solutions de <br/> <span className="text-gold">Protection Intégrée</span></h3>
+               <h3 className="text-3xl md:text-6xl font-header font-bold uppercase mb-4 italic leading-tight text-white">Solutions de <br/> <span className="gold-text-gradient">Protection Intégrée</span></h3>
                <div className="w-20 md:w-32 h-[2px] bg-gradient-to-r from-transparent via-gold to-transparent"></div>
             </div>
 
@@ -191,17 +191,17 @@ const Home = () => {
       {/* CTA Footer */}
       <section id="contact" className="py-40 bg-black relative">
          <div className="container mx-auto px-6 text-center max-w-4xl">
-            <h4 className="text-5xl md:text-7xl font-header font-bold mb-10 italic uppercase">Prêt à sécuriser <br/>votre <span className="text-gold underline decoration-gold/30 underline-offset-8">patrimoine</span> ?</h4>
+            <h4 className="text-5xl md:text-7xl font-header font-bold mb-10 italic uppercase">Prêt à sécuriser <br/>votre <span className="gold-text-gradient underline decoration-gold/30 underline-offset-8">patrimoine</span> ?</h4>
             <div className="grid md:grid-cols-2 gap-8 mb-16">
                <a href="tel:0668072141" className="bg-bg-card border border-gold/20 p-10 hover:border-gold transition-all block group">
                   <Phone className="mx-auto mb-4 text-gold group-hover:scale-110 transition-all" size={40} />
-                  <span className="block font-header text-2xl mb-2">APPELEZ-NOUS</span>
+                  <span className="block font-header text-2xl mb-2 uppercase">Appelez-nous</span>
                   <span className="text-gold font-header text-3xl">06 68 07 21 41</span>
                </a>
                <a href="mailto:mbsecurite31@gmail.com" className="bg-bg-card border border-gold/20 p-10 hover:border-gold transition-all block group">
                   <Mail className="mx-auto mb-4 text-gold group-hover:scale-110 transition-all" size={40} />
-                  <span className="block font-header text-2xl mb-2">EMAIL DIRECT</span>
-                  <span className="text-gold font-header text-xl truncate">mbsecurite31@gmail.com</span>
+                  <span className="block font-header text-2xl mb-2 uppercase">Email direct</span>
+                  <span className="text-gold font-header text-xl truncate uppercase">mbsecurite31@gmail.com</span>
                </a>
             </div>
             <div className="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-10">

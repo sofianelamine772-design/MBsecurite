@@ -1,7 +1,41 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Shield, Flame, Dog, UserCheck, Bell, Zap, CheckCircle2, ChevronRight, Phone } from 'lucide-react';
 import { Link } from 'react-router-dom';
+
+const FAQItem = ({ question, answer }) => {
+  const [isOpen, setIsOpen] = React.useState(false);
+
+  return (
+    <div className="border-b border-white/5 last:border-0">
+      <button 
+        onClick={() => setIsOpen(!isOpen)}
+        className="w-full py-6 flex justify-between items-center text-left group"
+      >
+        <span className="font-header text-sm md:text-base uppercase tracking-wider group-hover:text-gold transition-colors text-white">
+          {question}
+        </span>
+        <div className={`transition-transform duration-300 ${isOpen ? 'rotate-45 text-gold' : 'text-white/40'}`}>
+          <Zap size={20} />
+        </div>
+      </button>
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            className="overflow-hidden"
+          >
+            <p className="pb-8 text-white/60 text-sm leading-relaxed max-w-3xl">
+              {answer}
+            </p>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};
 
 const ServiceSection = ({ title, subtitle, description, icon: Icon, points, image, reverse = false }) => {
   return (
@@ -82,7 +116,7 @@ const Services = () => {
         "Exploitation du SSI",
         "Alerte et évacuation"
       ],
-      image: "https://images.unsplash.com/photo-1544256718-3bcf237f3974?q=80&w=1200&auto=format&fit=crop"
+      image: "/incendie-custom.jpg"
     },
     {
       title: "Gardiennage",
@@ -95,7 +129,7 @@ const Services = () => {
         "Accueil et filtrage",
         "Ouverture/Fermeture de sites"
       ],
-      image: "https://images.unsplash.com/photo-1454165833267-028733276cd8?q=80&w=1200&auto=format&fit=crop",
+      image: "/gardiennage-premium.png",
       reverse: true
     },
     {
@@ -109,7 +143,7 @@ const Services = () => {
         "Dissuasion active",
         "Détection d'intrusion"
       ],
-      image: "https://images.unsplash.com/photo-1590419690008-905895e8fe0d?q=80&w=1200&auto=format&fit=crop"
+      image: "/cynophile-premium.png"
     },
     {
       title: "Intervention",
@@ -122,7 +156,7 @@ const Services = () => {
         "Rapport détaillé",
         "Appel des forces de l'ordre"
       ],
-      image: "https://images.unsplash.com/photo-1621525540141-893ec245ae27?q=80&w=1200&auto=format&fit=crop",
+      image: "/intervention-action.png",
       reverse: true
     },
     {
@@ -136,7 +170,30 @@ const Services = () => {
         "Gestion des foules",
         "Protection VIP"
       ],
-      image: "https://images.unsplash.com/photo-1506157786151-b8491531f063?q=80&w=1200&auto=format&fit=crop"
+      image: "/evenementiel-premium.png"
+    }
+  ];
+
+  const faqs = [
+    {
+      question: "Quels services de sécurité proposez-vous à Saint-Gaudens ?",
+      answer: "MB SÉCURITÉ propose une large gamme de services incluant le gardiennage physique, la sécurité incendie (SSIAP), les équipes cynophiles (maître-chien) et l'intervention mobile sur alarme 24h/24 et 7j/7."
+    },
+    {
+      question: "Quelle est votre zone d'intervention en Occitanie ?",
+      answer: "Basés à Saint-Gaudens, nous intervenons dans toute la Haute-Garonne (31), notamment à Toulouse, Muret et Labège, ainsi que dans les départements limitrophes comme les Hautes-Pyrénées (65) et l'Ariège (09)."
+    },
+    {
+      question: "Vos agents SSIAP sont-ils qualifiés ?",
+      answer: "Absolument. Nos agents de sécurité incendie sont tous titulaires des diplômes SSIAP 1, 2 ou 3. Ils sont formés pour la surveillance des ERP (Établissements Recevant du Public) et des IGH (Immeubles de Grande Hauteur)."
+    },
+    {
+      question: "Pourquoi choisir une équipe cynophile pour la surveillance ?",
+      answer: "L'équipe cynophile est idéale pour la sécurisation de sites industriels ou de chantiers. Le binôme homme-chien offre une force de dissuasion visuelle et sonore inégalée, ainsi qu'une capacité de détection nocturne supérieure."
+    },
+    {
+      question: "En combien de temps intervenez-vous après une alarme ?",
+      answer: "Grâce à nos agents mobiles basés stratégiquement en Occitanie, nous garantissons une intervention rapide pour effectuer une levée de doute physique et sécuriser votre patrimoine immédiatement après le signal d'alarme."
     }
   ];
 
@@ -166,7 +223,7 @@ const Services = () => {
               Expertise & Protection
             </span>
             <h1 className="text-5xl md:text-8xl font-header font-bold italic uppercase tracking-tighter mb-8">
-              Nos <span className="text-transparent bg-clip-text bg-gradient-to-b from-gold-light via-gold to-gold-dark">Services</span>
+              Nos <span className="gold-text-gradient">Services</span>
             </h1>
             <p className="text-white/40 max-w-2xl mx-auto font-header uppercase tracking-[0.2em] text-xs md:text-sm leading-relaxed mb-6">
               Une gamme complète de solutions de sécurité sur-mesure pour les professionnels et les particuliers en Occitanie.
@@ -180,6 +237,22 @@ const Services = () => {
         <ServiceSection key={index} {...service} />
       ))}
 
+      {/* FAQ Section */}
+      <section className="py-24 bg-dark relative">
+        <div className="container mx-auto px-6 max-w-4xl">
+          <div className="text-center mb-16">
+            <h2 className="text-gold font-header text-[10px] tracking-[0.5em] uppercase mb-4">Questions Fréquentes</h2>
+            <h3 className="text-3xl md:text-5xl font-header font-bold uppercase italic text-white">Tout savoir sur <span className="gold-text-gradient">Nos Services</span></h3>
+          </div>
+          
+          <div className="bg-dark-card border border-white/5 p-8 md:p-12 rounded-sm shadow-2xl">
+            {faqs.map((faq, idx) => (
+              <FAQItem key={idx} {...faq} />
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-32 bg-black relative">
         <div className="container mx-auto px-6 text-center">
@@ -190,15 +263,15 @@ const Services = () => {
             className="max-w-4xl mx-auto"
           >
             <h2 className="text-4xl md:text-6xl font-header font-bold mb-10 italic uppercase">
-              Besoin d'une solution <br/> <span className="text-gold">particulière</span> ?
+              Besoin d'une solution <br/> <span className="gold-text-gradient">particulière</span> ?
             </h2>
             <p className="text-white/60 mb-12 text-lg">
               Nos experts sont à votre disposition pour analyser vos besoins et vous proposer un plan de sécurité adapté.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-6">
-              <a href="tel:0668072141" className="bg-gold text-black px-12 py-5 font-header font-bold tracking-widest uppercase text-xs flex items-center justify-center gap-3 hover:translate-y-[-5px] transition-all shadow-[0_10px_30px_rgba(212,175,55,0.3)]">
+              <a href="tel:0634394254" className="gold-gradient text-black px-12 py-5 font-header font-bold tracking-widest uppercase text-xs flex items-center justify-center gap-3 hover:translate-y-[-5px] transition-all shadow-[0_10px_30px_rgba(255,215,0,0.3)]">
                 <Phone size={18} />
-                06 68 07 21 41
+                06 34 39 42 54
               </a>
               <Link to="/zones-intervention" className="border border-white/20 hover:border-gold/50 px-12 py-5 font-header font-bold tracking-widest uppercase text-xs flex items-center justify-center gap-2 transition-all">
                 Nos zones d'intervention
