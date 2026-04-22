@@ -32,7 +32,7 @@ const Counter = ({ value, suffix = "+" }) => {
   }, [isInView, value]);
 
   return (
-    <span ref={ref} className="text-4xl lg:text-5xl font-header font-bold gold-text-gradient inline-block mb-2">
+    <span ref={ref} className="text-3xl md:text-4xl lg:text-5xl font-header font-bold gold-text-gradient inline-block mb-2">
       {count.toLocaleString()}{suffix}
     </span>
   );
@@ -66,14 +66,14 @@ const ServicePoint = ({ title, className, description, side = 'left' }) => (
 
 const Home = () => {
   return (
-    <div className="bg-dark min-h-screen text-white font-content selection:bg-gold selection:text-black">
+    <div className="bg-dark min-h-screen text-white font-content selection:bg-gold selection:text-black overflow-x-hidden">
       {/* Hero Section - HUD Aesthetic */}
-      <section className="relative min-h-[90vh] md:h-screen flex items-center justify-center overflow-hidden pt-28 pb-10">
+      <section className="relative min-h-[100vh] flex items-center justify-center overflow-hidden pt-20 pb-10">
          {/* Background with Vignette and Gradient overlay */}
          <div className="absolute inset-0 z-0">
-            <img src="/hero-bg.png" alt="Security Presence" className="w-full h-full object-cover animate-pulse scale-105" style={{ animationDuration: '8s' }} />
-            <div className="absolute inset-0 bg-gradient-to-b from-dark/80 via-dark/40 to-dark"></div>
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0)_0%,rgba(0,0,0,0.8)_100%)] text-black"></div>
+            <img src="/hero-bg.png" alt="Security Presence" className="w-full h-full object-cover scale-110 md:scale-105" />
+            <div className="absolute inset-0 bg-gradient-to-b from-dark/90 via-dark/40 to-dark"></div>
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(0,0,0,0)_0%,rgba(0,0,0,0.9)_100%)]"></div>
          </div>
 
          {/* Central Content */}
@@ -84,25 +84,28 @@ const Home = () => {
               transition={{ duration: 0.8 }}
               className="flex flex-col items-center"
             >
-               <div className="mb-4">
-                  <span className="inline-block px-4 py-1 border border-gold/30 text-gold text-[8px] md:text-[10px] font-header uppercase tracking-[0.4em] mb-4 bg-gold/5">Saint-Gaudens & Occitanie</span>
+               <div className="mb-6">
+                  <span className="inline-block px-4 py-1 border border-gold/30 text-gold text-[9px] md:text-[10px] font-header uppercase tracking-[0.4em] bg-gold/5 backdrop-blur-sm">Saint-Gaudens & Occitanie</span>
                </div>
-               <h1 className="text-4xl sm:text-6xl md:text-8xl lg:text-[140px] font-header font-bold leading-[0.8] mb-8 italic tracking-tighter uppercase text-white">
+               
+               <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-[140px] font-header font-bold leading-[0.9] mb-8 italic tracking-tighter uppercase text-white drop-shadow-2xl">
                   VOTRE <br />
                   <span className="gold-text-gradient">SÉCURITÉ</span>
                </h1>
-               <div className="flex gap-4 items-center mb-10 w-full justify-center">
-                  <div className="h-[1px] flex-1 max-w-[50px] bg-gold/30"></div>
-                  <p className="text-secondary max-w-sm font-header uppercase tracking-[0.2em] text-[10px] md:text-sm lg:text-base opacity-80 leading-relaxed text-white/60">
+
+               <div className="flex gap-4 items-center mb-10 w-full justify-center max-w-lg">
+                  <div className="hidden sm:block h-[1px] flex-1 bg-gold/30"></div>
+                  <p className="text-white/60 font-header uppercase tracking-[0.2em] text-[10px] md:text-sm lg:text-base leading-relaxed px-4">
                     Leader régional de la surveillance humaine et du gardiennage
                   </p>
-                  <div className="h-[1px] flex-1 max-w-[50px] bg-gold/30"></div>
+                  <div className="hidden sm:block h-[1px] flex-1 bg-gold/30"></div>
                </div>
-               <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-                  <Link to="/services" className="gold-gradient text-black px-10 py-4 font-header font-bold tracking-[0.2em] uppercase text-xs hover:translate-y-[-5px] transition-all shadow-[0_10px_30px_rgba(255,215,0,0.3)]">
+
+               <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto px-4 sm:px-0">
+                  <Link to="/services" className="gold-gradient text-black px-12 py-5 font-header font-bold tracking-[0.2em] uppercase text-xs hover:translate-y-[-5px] transition-all shadow-[0_10px_30px_rgba(255,215,0,0.3)] w-full sm:w-auto">
                     Nos Solutions
                   </Link>
-                  <a href="#contact" className="border-2 border-white/20 hover:border-white/60 bg-transparent px-10 py-4 font-header font-bold tracking-[0.2em] uppercase text-xs transition-all hover:bg-white/5 text-white">
+                  <a href="#contact" className="border border-white/20 hover:border-white/60 bg-white/5 backdrop-blur-sm px-12 py-5 font-header font-bold tracking-[0.2em] uppercase text-xs transition-all hover:bg-white/10 w-full sm:w-auto text-white">
                     Consultation
                   </a>
                </div>
@@ -112,27 +115,27 @@ const Home = () => {
                  initial={{ opacity: 0 }}
                  animate={{ opacity: 1 }}
                  transition={{ delay: 1, duration: 1 }}
-                 className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 border-t border-white/5 pt-10 max-w-5xl"
+                 className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 border-t border-white/5 pt-12 max-w-5xl w-full"
                >
-                  <div className="text-left">
-                    <h5 className="text-gold font-header text-[10px] uppercase tracking-widest mb-2 font-bold italic">Surveillance Humaine</h5>
-                    <p className="text-white/40 text-[9px] uppercase leading-relaxed tracking-wider">Agents qualifiés pour la protection physique de vos sites sensibles et chantiers.</p>
+                  <div className="text-center md:text-left px-4">
+                    <h5 className="text-gold font-header text-[10px] md:text-xs uppercase tracking-widest mb-3 font-bold italic">Surveillance Humaine</h5>
+                    <p className="text-white/40 text-[9px] md:text-[10px] uppercase leading-relaxed tracking-wider">Agents qualifiés pour la protection physique de vos sites sensibles et chantiers.</p>
                   </div>
-                  <div className="text-left md:border-x border-white/5 md:px-8">
-                    <h5 className="text-gold font-header text-[10px] uppercase tracking-widest mb-2 font-bold italic">Sécurité Incendie</h5>
-                    <p className="text-white/40 text-[9px] uppercase leading-relaxed tracking-wider">Expertise SSIAP 1, 2 et 3 pour la prévention et la gestion des risques incendie.</p>
+                  <div className="text-center md:text-left md:border-x border-white/5 md:px-8 px-4">
+                    <h5 className="text-gold font-header text-[10px] md:text-xs uppercase tracking-widest mb-3 font-bold italic">Sécurité Incendie</h5>
+                    <p className="text-white/40 text-[9px] md:text-[10px] uppercase leading-relaxed tracking-wider">Expertise SSIAP 1, 2 et 3 pour la prévention et la gestion des risques incendie.</p>
                   </div>
-                  <div className="text-left">
-                    <h5 className="text-gold font-header text-[10px] uppercase tracking-widest mb-2 font-bold italic">Intervention Mobile</h5>
-                    <p className="text-white/40 text-[9px] uppercase leading-relaxed tracking-wider">Réactivité totale 24h/24 pour levée de doute et patrouilles de dissuasion.</p>
+                  <div className="text-center md:text-left px-4">
+                    <h5 className="text-gold font-header text-[10px] md:text-xs uppercase tracking-widest mb-3 font-bold italic">Intervention Mobile</h5>
+                    <p className="text-white/40 text-[9px] md:text-[10px] uppercase leading-relaxed tracking-wider">Réactivité totale 24h/24 pour levée de doute et patrouilles de dissuasion.</p>
                   </div>
                </motion.div>
             </motion.div>
          </div>
       </section>
 
-      {/* New Alarm & Remote Monitoring Section - NOW OUTSIDE HERO */}
-      <section className="relative py-24 md:py-32 bg-dark-card border-y border-white/5 overflow-hidden">
+      {/* Alarm & Remote Monitoring Section */}
+      <section className="relative py-24 md:py-40 bg-dark-card border-y border-white/5">
         <div className="container mx-auto px-6 relative z-10 max-w-4xl text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -140,16 +143,18 @@ const Home = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
             >
-              <h2 className="text-3xl md:text-5xl font-header font-bold italic uppercase mb-12 text-white leading-tight">
+              <h2 className="text-3xl md:text-6xl font-header font-bold italic uppercase mb-12 text-white leading-[1.1] tracking-tight">
                 Protégez-vous avec un <br/><span className="gold-text-gradient">système d’alarme avec télésurveillance</span>
               </h2>
               
-              <div className="space-y-10 text-white/50 font-header uppercase tracking-[0.2em] text-[10px] md:text-xs leading-relaxed">
+              <div className="space-y-12 text-white/50 font-header uppercase tracking-[0.2em] text-[10px] md:text-sm leading-relaxed max-w-3xl mx-auto">
                   <p>
                     La sécurité de votre habitation et de vos proches est un enjeu crucial. MB SÉCURITÉ vous accompagne avec l'installation d'alarme avec télésurveillance. Nous vous proposons une gamme d’appareils de sécurité pour vous protéger contre les risques du quotidien : tentative d’intrusion, actes de vandalisme, dégagement de fumée, fuite d’eau, urgence médicale etc...
                   </p>
                   
-                  <p className="border-y border-white/5 py-10">
+                  <div className="h-px w-20 bg-gold/20 mx-auto"></div>
+                  
+                  <p className="text-white/70 italic bg-white/[0.02] p-8 md:p-12 border border-white/5 rounded-sm">
                     Notre centre de télésurveillance réagit au moindre déclenchement d'alarme 24h/24 et 7j/7, même si vous n’êtes pas sur place pour prévenir les services d’urgence, grâce à notre numéro réservé, offrir une vérification par image et gagner ainsi des secondes vitales.
                   </p>
                   
@@ -158,14 +163,14 @@ const Home = () => {
                   </p>
               </div>
               
-              <div className="mt-16 flex justify-center">
-                  <div className="w-16 h-1 bg-gold/30"></div>
+              <div className="mt-20 flex justify-center">
+                  <div className="w-24 h-1 bg-gold/30 shadow-[0_0_15px_rgba(255,215,0,0.2)]"></div>
               </div>
             </motion.div>
         </div>
       </section>
 
-      {/* Services Section - Inspired by the PDF Cover */}
+      {/* Services Section */}
       <section id="services" className="relative py-24 md:py-40 bg-black overflow-hidden">
          {/* Background Decor */}
          <div className="absolute top-0 right-0 w-[300px] md:w-[500px] h-[300px] md:h-[500px] bg-gold/5 blur-[120px] rounded-full"></div>
@@ -173,8 +178,8 @@ const Home = () => {
          <div className="container mx-auto px-6 relative z-10">
             <div className="flex flex-col items-center mb-16 md:mb-32 text-center">
                <h2 className="text-gold font-header text-[10px] tracking-[0.5em] uppercase mb-4">Architecture de Défense</h2>
-               <h3 className="text-3xl md:text-6xl font-header font-bold uppercase mb-4 italic leading-tight text-white">Solutions de <br/> <span className="gold-text-gradient text-white">Surveillance Humaine</span></h3>
-               <div className="w-20 md:w-32 h-[2px] bg-gradient-to-r from-transparent via-gold to-transparent"></div>
+               <h3 className="text-4xl md:text-7xl font-header font-bold uppercase mb-6 italic leading-tight text-white">Solutions de <br/> <span className="gold-text-gradient text-white">Surveillance Humaine</span></h3>
+               <div className="w-24 md:w-40 h-[2px] bg-gradient-to-r from-transparent via-gold to-transparent"></div>
             </div>
 
             {/* Desktop Layout - HUD Connectors */}
@@ -195,85 +200,87 @@ const Home = () => {
                <ServicePoint title="Intervention" description="Réponse sur Alarme" className="bottom-1/2 right-[0%]" side="right" />
             </div>
 
-            {/* Mobile Layout - Cards/Grid */}
-            <div className="lg:hidden grid grid-cols-1 gap-6">
+            {/* Mobile/Tablet Layout - Premium Grid */}
+            <div className="lg:hidden grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
                {[
-                  { title: "Sécurité Incendie", desc: "Prévention & SSI", icon: <Shield size={24} /> },
-                  { title: "Équipe Cynophile", desc: "Conducteur & Chien", icon: <CheckCircle2 size={24} /> },
-                  { title: "Événementiel", desc: "Manifestations & VIP", icon: <Bell size={24} /> },
-                  { title: "Gardiennage", desc: "Protection Physique", icon: <Lock size={24} /> },
-                  { title: "Intervention", desc: "Réponse sur Alarme", icon: <Zap size={24} /> }
+                  { title: "Sécurité Incendie", desc: "Prévention & SSI", icon: <Shield size={28} /> },
+                  { title: "Équipe Cynophile", desc: "Conducteur & Chien", icon: <CheckCircle2 size={28} /> },
+                  { title: "Événementiel", desc: "Manifestations & VIP", icon: <Bell size={28} /> },
+                  { title: "Gardiennage", desc: "Protection Physique", icon: <Lock size={28} /> },
+                  { title: "Intervention", desc: "Réponse sur Alarme", icon: <Zap size={28} /> }
                ].map((item, idx) => (
                   <motion.div 
                     key={idx}
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
-                    className="p-6 bg-dark-card border border-white/5 rounded flex items-center gap-6"
+                    viewport={{ once: true }}
+                    className="p-8 bg-dark-card border border-white/5 rounded-sm flex flex-col items-center text-center gap-6 group hover:border-gold/30 transition-all"
                   >
-                     <div className="p-3 bg-gold/10 text-gold rounded border border-gold/20">
+                     <div className="p-4 bg-gold/10 text-gold rounded-full border border-gold/20 group-hover:bg-gold group-hover:text-black transition-all">
                         {item.icon}
                      </div>
                      <div>
-                        <h4 className="font-header font-bold text-white uppercase italic text-sm">{item.title}</h4>
-                        <p className="text-[10px] text-white/40 uppercase tracking-widest">{item.desc}</p>
+                        <h4 className="font-header font-bold text-white uppercase italic text-lg mb-2">{item.title}</h4>
+                        <p className="text-[10px] text-white/40 uppercase tracking-[0.2em] font-bold">{item.desc}</p>
                      </div>
                   </motion.div>
                ))}
-               <div className="mt-10 p-6 flex justify-center">
-                  <img src="/logo.png" alt="Logo" className="w-1/2 opacity-20" />
+               <div className="sm:col-span-2 mt-12 p-12 flex justify-center border-t border-white/5">
+                  <img src="/logo.png" alt="Logo" className="w-1/2 md:w-1/3 opacity-20 grayscale" />
                </div>
             </div>
          </div>
       </section>
 
-      {/* Trust Banner - Section Propos */}
+      {/* Trust Banner */}
       <section id="propos" className="py-24 bg-dark-card border-y border-white/5 relative">
-         <div className="container mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+         <div className="container mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-y-16 gap-x-8 text-center">
             {[
                { label: "Gardiens", val: "25", suffix: "+" },
                { label: "Interventions/Mois", val: "120", suffix: "+" },
                { label: "Sites Protégés", val: "50", suffix: "+" },
                { label: "Satisfaction", val: "99", suffix: "%" }
             ].map((stat, i) => (
-              <div key={i}>
+              <div key={i} className="flex flex-col items-center">
                 <Counter value={stat.val} suffix={stat.suffix} />
-                <div className="text-[10px] font-header uppercase tracking-widest text-white/40">{stat.label}</div>
+                <div className="text-[9px] md:text-[10px] font-header uppercase tracking-widest text-white/40 font-bold">{stat.label}</div>
               </div>
             ))}
          </div>
       </section>
 
       {/* CTA Footer */}
-      <section id="contact" className="py-40 bg-black relative">
+      <section id="contact" className="py-24 md:py-40 bg-black relative">
          <div className="container mx-auto px-6 text-center max-w-4xl">
-            <h4 className="text-5xl md:text-7xl font-header font-bold mb-10 italic uppercase text-white">VOTRE SÉCURITÉ <br/><span className="gold-text-gradient underline decoration-gold/30 underline-offset-8">NOTRE MISSION</span></h4>
-            <div className="grid md:grid-cols-2 gap-8 mb-16">
-               <a href="tel:0668072141" className="bg-bg-card border border-gold/20 p-10 hover:border-gold transition-all block group">
-                  <Phone className="mx-auto mb-4 text-gold group-hover:scale-110 transition-all" size={40} />
-                  <span className="block font-header text-2xl mb-2 uppercase text-white">Appelez-nous</span>
-                  <span className="text-gold font-header text-3xl">06 68 07 21 41</span>
+            <h4 className="text-4xl md:text-7xl font-header font-bold mb-12 italic uppercase text-white leading-none">VOTRE SÉCURITÉ <br/><span className="gold-text-gradient underline decoration-gold/30 underline-offset-8">NOTRE MISSION</span></h4>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-20">
+               <a href="tel:0668072141" className="bg-bg-card border border-gold/20 p-10 hover:border-gold transition-all block group rounded-sm shadow-xl">
+                  <Phone className="mx-auto mb-6 text-gold group-hover:scale-110 transition-all" size={32} />
+                  <span className="block font-header text-xl md:text-2xl mb-2 uppercase text-white">Appelez-nous</span>
+                  <span className="text-gold font-header text-2xl md:text-3xl font-bold">06 68 07 21 41</span>
                </a>
-               <a href="mailto:contact@mbsecurite.fr" className="bg-bg-card border border-gold/20 p-10 hover:border-gold transition-all block group">
-                  <Mail className="mx-auto mb-4 text-gold group-hover:scale-110 transition-all" size={40} />
-                  <span className="block font-header text-2xl mb-2 uppercase text-white">Email direct</span>
-                  <span className="text-gold font-header text-xl truncate uppercase">contact@mbsecurite.fr</span>
+               <a href="mailto:contact@mbsecurite.fr" className="bg-bg-card border border-gold/20 p-10 hover:border-gold transition-all block group rounded-sm shadow-xl">
+                  <Mail className="mx-auto mb-6 text-gold group-hover:scale-110 transition-all" size={32} />
+                  <span className="block font-header text-xl md:text-2xl mb-2 uppercase text-white">Email direct</span>
+                  <span className="text-gold font-header text-lg md:text-xl truncate uppercase font-bold">contact@mbsecurite.fr</span>
                </a>
             </div>
             
-            <div className="flex flex-col md:flex-row justify-between items-center gap-6 md:gap-10 border-t border-white/5 pt-10">
-                <div className="text-left">
-                  <p className="text-white/20 font-header uppercase tracking-[0.3em] text-[8px] md:text-[10px] mb-1">MB SÉCURITÉ - TOUS DROITS RÉSERVÉS - 2026</p>
-                  <p className="text-gold/30 font-header uppercase tracking-[0.2em] text-[7px] md:text-[9px]">Agrément CNAPS n° 2026-0032214-AGD-ESP-0978198</p>
+            <div className="flex flex-col md:flex-row justify-between items-center gap-10 md:gap-10 border-t border-white/5 pt-12">
+                <div className="text-center md:text-left">
+                  <p className="text-white/20 font-header uppercase tracking-[0.3em] text-[8px] md:text-[9px] mb-2">MB SÉCURITÉ - TOUS DROITS RÉSERVÉS - 2026</p>
+                  <p className="text-gold/30 font-header uppercase tracking-[0.2em] text-[7px] md:text-[8px] font-bold">Agrément CNAPS n° 2026-0032214-AGD-ESP-0978198</p>
                 </div>
-                <div className="flex gap-8">
-                  <Link to="/zones-intervention" className="text-gold/40 hover:text-gold transition-all font-header uppercase tracking-[0.3em] text-[8px] md:text-[10px] border-b border-gold/10 pb-1">
-                    Zones d'intervention
+                <div className="flex flex-wrap justify-center gap-6 md:gap-8">
+                  <Link to="/zones-intervention" className="text-gold/40 hover:text-gold transition-all font-header uppercase tracking-[0.3em] text-[8px] md:text-[9px] border-b border-gold/10 pb-1">
+                    Zones
                   </Link>
-                  <Link to="/statut-legal" className="text-gold/40 hover:text-gold transition-all font-header uppercase tracking-[0.3em] text-[8px] md:text-[10px] border-b border-gold/10 pb-1">
+                  <Link to="/statut-legal" className="text-gold/40 hover:text-gold transition-all font-header uppercase tracking-[0.3em] text-[8px] md:text-[9px] border-b border-gold/10 pb-1">
                     Statut Légal
                   </Link>
-                  <Link to="/mentions-legales" className="text-gold/40 hover:text-gold transition-all font-header uppercase tracking-[0.3em] text-[8px] md:text-[10px] border-b border-gold/10 pb-1">
-                    Mentions Légales
+                  <Link to="/mentions-legales" className="text-gold/40 hover:text-gold transition-all font-header uppercase tracking-[0.3em] text-[8px] md:text-[9px] border-b border-gold/10 pb-1">
+                    Mentions
                   </Link>
                </div>
             </div>
