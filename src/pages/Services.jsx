@@ -82,7 +82,7 @@ const Services = () => {
         "Exploitation du SSI",
         "Alerte et évacuation"
       ],
-      image: "https://images.unsplash.com/photo-1544256718-3bcf237f3974?q=80&w=1200&auto=format&fit=crop"
+      image: "/incendie-premium.png"
     },
     {
       title: "Gardiennage",
@@ -95,7 +95,7 @@ const Services = () => {
         "Accueil et filtrage",
         "Ouverture/Fermeture de sites"
       ],
-      image: "https://images.unsplash.com/photo-1454165833267-028733276cd8?q=80&w=1200&auto=format&fit=crop",
+      image: "/gardiennage-premium.png",
       reverse: true
     },
     {
@@ -109,7 +109,7 @@ const Services = () => {
         "Dissuasion active",
         "Détection d'intrusion"
       ],
-      image: "https://images.unsplash.com/photo-1590419690008-905895e8fe0d?q=80&w=1200&auto=format&fit=crop"
+      image: "/cynophile-premium.png"
     },
     {
       title: "Intervention",
@@ -122,7 +122,7 @@ const Services = () => {
         "Rapport détaillé",
         "Appel des forces de l'ordre"
       ],
-      image: "https://images.unsplash.com/photo-1621525540141-893ec245ae27?q=80&w=1200&auto=format&fit=crop",
+      image: "/intervention-action.png",
       reverse: true
     },
     {
@@ -136,7 +136,7 @@ const Services = () => {
         "Gestion des foules",
         "Protection VIP"
       ],
-      image: "https://images.unsplash.com/photo-1506157786151-b8491531f063?q=80&w=1200&auto=format&fit=crop"
+      image: "/evenementiel-premium.png"
     }
   ];
 
@@ -166,7 +166,7 @@ const Services = () => {
               Expertise & Protection
             </span>
             <h1 className="text-5xl md:text-8xl font-header font-bold italic uppercase tracking-tighter mb-8">
-              Nos <span className="text-transparent bg-clip-text bg-gradient-to-b from-gold-light via-gold to-gold-dark">Services</span>
+              Nos <span className="gold-text-gradient">Services</span>
             </h1>
             <p className="text-white/40 max-w-2xl mx-auto font-header uppercase tracking-[0.2em] text-xs md:text-sm leading-relaxed mb-6">
               Une gamme complète de solutions de sécurité sur-mesure pour les professionnels et les particuliers en Occitanie.
@@ -190,13 +190,13 @@ const Services = () => {
             className="max-w-4xl mx-auto"
           >
             <h2 className="text-4xl md:text-6xl font-header font-bold mb-10 italic uppercase">
-              Besoin d'une solution <br/> <span className="text-gold">particulière</span> ?
+              Besoin d'une solution <br/> <span className="gold-text-gradient">particulière</span> ?
             </h2>
             <p className="text-white/60 mb-12 text-lg">
               Nos experts sont à votre disposition pour analyser vos besoins et vous proposer un plan de sécurité adapté.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-6">
-              <a href="tel:0634394254" className="bg-gold text-black px-12 py-5 font-header font-bold tracking-widest uppercase text-xs flex items-center justify-center gap-3 hover:translate-y-[-5px] transition-all shadow-[0_10px_30px_rgba(212,175,55,0.3)]">
+              <a href="tel:0634394254" className="gold-gradient text-black px-12 py-5 font-header font-bold tracking-widest uppercase text-xs flex items-center justify-center gap-3 hover:translate-y-[-5px] transition-all shadow-[0_10px_30px_rgba(255,215,0,0.3)]">
                 <Phone size={18} />
                 06 34 39 42 54
               </a>

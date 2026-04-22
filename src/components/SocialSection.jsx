@@ -20,7 +20,7 @@ const SocialSection = () => {
               Restons Connectés
             </span>
             <h2 className="text-3xl md:text-5xl font-header font-bold italic uppercase tracking-tighter mb-4 text-white">
-              Suivez notre <span className="text-gold">Activité</span>
+              Suivez notre <span className="gold-text-gradient">Activité</span>
             </h2>
             <p className="text-white/40 font-header uppercase tracking-[0.2em] text-[10px] md:text-xs leading-relaxed mb-12">
               Découvrez notre professionnalisme et notre efficacité au quotidien sur les réseaux sociaux

@@ -32,7 +32,7 @@ const Counter = ({ value, suffix = "+" }) => {
   }, [isInView, value]);
 
   return (
-    <span ref={ref} className="text-4xl lg:text-5xl font-header font-bold text-gold inline-block mb-2">
+    <span ref={ref} className="text-4xl lg:text-5xl font-header font-bold gold-text-gradient inline-block mb-2">
       {count.toLocaleString()}{suffix}
     </span>
   );
@@ -99,7 +99,7 @@ const Home = () => {
                   <div className="h-[1px] flex-1 max-w-[50px] bg-gold/30"></div>
                </div>
                <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-                  <Link to="/services" className="bg-gold text-black px-10 py-4 font-header font-bold tracking-[0.2em] uppercase text-xs hover:translate-y-[-5px] transition-all shadow-[0_10px_30px_rgba(212,175,55,0.3)]">
+                  <Link to="/services" className="gold-gradient text-black px-10 py-4 font-header font-bold tracking-[0.2em] uppercase text-xs hover:translate-y-[-5px] transition-all shadow-[0_10px_30px_rgba(255,215,0,0.3)]">
                     Nos Solutions
                   </Link>
                   <a href="#contact" className="border-2 border-white/20 hover:border-white/60 bg-transparent px-10 py-4 font-header font-bold tracking-[0.2em] uppercase text-xs transition-all hover:bg-white/5">
@@ -117,8 +117,8 @@ const Home = () => {
          
          <div className="container mx-auto px-6 relative z-10">
             <div className="flex flex-col items-center mb-16 md:mb-32 text-center text-black">
-               <h2 className="text-gold font-header text-[10px] tracking-[0.5em] uppercase mb-4">Architecture de Défense</h2>
-               <h3 className="text-3xl md:text-6xl font-header font-bold uppercase mb-4 italic leading-tight text-white">Solutions de <br/> <span className="text-gold">Protection Intégrée</span></h3>
+               <h2 className="gold-text-gradient font-header text-[10px] tracking-[0.5em] uppercase mb-4">Architecture de Défense</h2>
+               <h3 className="text-3xl md:text-6xl font-header font-bold uppercase mb-4 italic leading-tight text-white">Solutions de <br/> <span className="gold-text-gradient">Protection Intégrée</span></h3>
                <div className="w-20 md:w-32 h-[2px] bg-gradient-to-r from-transparent via-gold to-transparent"></div>
             </div>
 
@@ -191,7 +191,7 @@ const Home = () => {
       {/* CTA Footer */}
       <section id="contact" className="py-40 bg-black relative">
          <div className="container mx-auto px-6 text-center max-w-4xl">
-            <h4 className="text-5xl md:text-7xl font-header font-bold mb-10 italic uppercase">Prêt à sécuriser <br/>votre <span className="text-gold underline decoration-gold/30 underline-offset-8">patrimoine</span> ?</h4>
+            <h4 className="text-5xl md:text-7xl font-header font-bold mb-10 italic uppercase">Prêt à sécuriser <br/>votre <span className="gold-text-gradient underline decoration-gold/30 underline-offset-8">patrimoine</span> ?</h4>
             <div className="grid md:grid-cols-2 gap-8 mb-16">
                <a href="tel:0634394254" className="bg-bg-card border border-gold/20 p-10 hover:border-gold transition-all block group">
                   <Phone className="mx-auto mb-4 text-gold group-hover:scale-110 transition-all" size={40} />

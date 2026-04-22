@@ -45,7 +45,7 @@ const Navbar = () => {
                 <span className="absolute -bottom-2 left-0 w-0 h-[2px] bg-gold transition-all duration-300 group-hover:w-full"></span>
               </Link>
             ))}
-            <a href="tel:0634394254" className="bg-gold hover:bg-gold-light text-black px-6 py-3 rounded-sm font-header font-bold text-xs tracking-widest uppercase transition-all flex items-center gap-2 group shadow-[0_0_20px_rgba(212,175,55,0.4)]">
+            <a href="tel:0634394254" className="gold-gradient hover:opacity-90 text-black px-6 py-3 rounded-sm font-header font-bold text-xs tracking-widest uppercase transition-all flex items-center gap-2 group shadow-[0_0_20px_rgba(255,215,0,0.4)]">
               <Phone size={14} className="group-hover:scale-110 transition-transform" />
               <span>06 34 39 42 54</span>
             </a>

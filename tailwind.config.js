@@ -8,9 +8,9 @@ export default {
     extend: {
       colors: {
         gold: {
-          light: '#F7D060',
-          DEFAULT: '#D4AF37', // Burnished Gold from PDF
-          dark: '#B2912D',
+          light: '#FFEA70',
+          DEFAULT: '#FFD700',
+          dark: '#B8860B',
         },
         dark: {
           DEFAULT: '#0A0B0D',
