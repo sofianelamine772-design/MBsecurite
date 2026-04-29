@@ -25,7 +25,7 @@ const MentionsLegales = () => {
               <li>Forme juridique : SASU</li>
               <li>Siège social : Saint-Gaudens, 31800</li>
               <li>Numéro SIREN : 99035090200013</li>
-              <li>Agrément CNAPS : <span className="text-gold font-bold">2026-0032214-AGD-ESP-0978198</span></li>
+
               <li>Directeur de la publication : MB Sécurité</li>
             </ul>
           </section>

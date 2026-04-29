@@ -81,7 +81,7 @@ const StatutLegal = () => {
           <LegalCard 
             icon={Landmark}
             title="Autorisation Administrative"
-            content="MB SÉCURITÉ opère sous l'autorisation d'exercice N° 2026-0032214-AGD-ESP-0978198 délivrée par le CNAPS. C'est l'assurance d'un prestataire vérifié et agréé."
+            content="MB SÉCURITÉ opère sous une autorisation d'exercice délivrée par le CNAPS. C'est l'assurance d'un prestataire vérifié et agréé."
           />
           <LegalCard 
             icon={ShieldCheck}

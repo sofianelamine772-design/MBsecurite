@@ -270,7 +270,7 @@ const Home = () => {
             <div className="flex flex-col md:flex-row justify-between items-center gap-10 md:gap-10 border-t border-white/5 pt-12">
                 <div className="text-center md:text-left">
                   <p className="text-white/20 font-header uppercase tracking-[0.3em] text-[8px] md:text-[9px] mb-2">MB SÉCURITÉ - TOUS DROITS RÉSERVÉS - 2026</p>
-                  <p className="text-gold/30 font-header uppercase tracking-[0.2em] text-[7px] md:text-[8px] font-bold">Agrément CNAPS n° 2026-0032214-AGD-ESP-0978198</p>
+
                 </div>
                 <div className="flex flex-wrap justify-center gap-6 md:gap-8">
                   <Link to="/zones-intervention" className="text-gold/40 hover:text-gold transition-all font-header uppercase tracking-[0.3em] text-[8px] md:text-[9px] border-b border-gold/10 pb-1">
