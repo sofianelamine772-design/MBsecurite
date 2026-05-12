@@ -35,10 +35,11 @@ const FAQItem = ({ question, answer }) => {
 };
 
 const cities = [
-  "Toulouse", "Colomiers", "Tournefeuille", "Blagnac", "Muret",
-  "Plaisance-du-Touch", "Cugnaux", "Balma", "L'Union", "Castanet-Tolosan",
-  "Saint-Orens-de-Gameville", "Saint-Gaudens", "Revel", "Auterive", "Léguevin",
-  "Fonsorbes", "Grenade", "Castelginest", "Villeneuve-Tolosane", "Pibrac"
+  "Saint-Gaudens", "Montrejeau", "Lannemezan", "Trie sur baise", "Boulogne sur gesse",
+  "Saint blancard", "Arreau", "Saint lary soulan", "Loudenvielle", "Bagneres de bigorre",
+  "Bagneres de luchon", "Saint beat", "Aspet", "Salies du salât", "Foix",
+  "Saint girons", "Aurignac", "Martres tolosane", "Cazeres", "Muret",
+  "Colomiers", "Toulouse"
 ];
 
 const LieuxIntervention = () => {
@@ -64,7 +65,7 @@ const LieuxIntervention = () => {
               </div>
               <h1 className="text-4xl md:text-7xl font-header font-bold italic tracking-tighter uppercase mb-6 leading-none">Zones d'<span className="text-gold">Intervention</span></h1>
               <p className="text-white/60 font-header uppercase tracking-[0.2em] text-xs md:text-sm max-w-2xl mx-auto leading-relaxed">
-                MB SÉCURITÉ déploie ses agents sur l'ensemble de la Haute-Garonne (31). <br/> Une vigilance totale de Toulouse au Comminges.
+                MB SÉCURITÉ déploie ses agents sur plusieurs départements du Sud-Ouest. <br/> Une vigilance totale de Toulouse aux Pyrénées.
               </p>
             </motion.div>
          </div>
@@ -118,7 +119,7 @@ const LieuxIntervention = () => {
           <div className="bg-white/[0.02] border border-white/5 p-8 md:p-12 rounded-sm">
             <FAQItem 
               question="Intervenez-vous dans tout le département ?" 
-              answer="Oui, MB SÉCURITÉ couvre l'intégralité de la Haute-Garonne (31). Que vous soyez à Toulouse, dans le Comminges ou le Lauragais, nos agents se déplacent partout sans exception." 
+              answer="Oui, MB SÉCURITÉ couvre un large secteur incluant la Haute-Garonne, l'Ariège et les Hautes-Pyrénées. Que vous soyez à Toulouse, Foix ou Lannemezan, nos agents se déplacent partout sans exception." 
             />
             <FAQItem 
               question="Quels sont les délais d'intervention ?" 
@@ -142,12 +143,12 @@ const LieuxIntervention = () => {
         {/* Full Department Note */}
         <div className="text-center p-12 border-t border-white/5 opacity-80 italic max-w-2xl mx-auto">
           <p className="text-sm text-white/40">
-            "Nous intervenons sur l'intégralité des 586 communes de la Haute-Garonne. Que vous soyez en zone urbaine à Toulouse ou en zone rurale dans le Comminges, MB SÉCURITÉ assure votre vigilance."
+            "Nous intervenons sur de nombreuses communes d'Occitanie. Que vous soyez en zone urbaine à Toulouse ou au cœur des Pyrénées, MB SÉCURITÉ assure votre vigilance."
           </p>
         </div>
 
         <footer className="mt-24 pt-10 border-t border-white/5 opacity-40 text-center text-[10px] font-header tracking-[0.4em] uppercase">
-          MB SÉCURITÉ &copy; 2026 - VIGILANCE TOTALE SUR LE 31
+          MB SÉCURITÉ &copy; 2026 - VIGILANCE TOTALE SUR VOTRE SECTEUR
         </footer>
       </div>
     </div>
