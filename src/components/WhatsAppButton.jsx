@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const WhatsAppButton = () => {
-  const phoneNumber = "33668072141"; // Format international pour 06 68 07 21 41
+  const phoneNumber = "33634394254"; // Format international pour 06 34 39 42 54
   const message = encodeURIComponent("Bonjour MB SÉCURITÉ, j'aimerais avoir des renseignements sur vos services.");
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 

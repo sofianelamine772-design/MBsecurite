@@ -4,9 +4,9 @@ import { Shield, Users, Trophy, Star, Mail, Phone, ChevronRight, FileText, Brief
 
 const Recrutement = () => {
   return (
-    <div className="bg-dark min-h-screen text-white pt-24">
+    <div className="bg-dark min-h-screen text-white pt-4">
       {/* Hero Section */}
-      <section className="relative py-32 overflow-hidden border-b border-white/5">
+      <section className="relative py-16 overflow-hidden border-b border-white/5">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1541873676947-41ec999086e3?q=80&w=2070&auto=format&fit=crop" 
@@ -40,7 +40,7 @@ const Recrutement = () => {
               >
                 Postuler maintenant
               </a>
-              <a href="tel:0668072141" className="border border-white/20 hover:border-gold/50 px-12 py-5 font-header font-bold tracking-widest uppercase text-xs flex items-center justify-center gap-2 transition-all">
+              <a href="tel:0634394254" className="border border-white/20 hover:border-gold/50 px-12 py-5 font-header font-bold tracking-widest uppercase text-xs flex items-center justify-center gap-2 transition-all">
                 Nous contacter
               </a>
             </div>
@@ -161,7 +161,7 @@ const Recrutement = () => {
                   <div className="p-5 bg-white/5 rounded-full text-gold"><Phone size={24} /></div>
                   <div className="flex flex-col">
                     <span className="text-[10px] uppercase font-bold text-white/30 tracking-widest mb-1">Téléphone</span>
-                    <span className="font-header text-lg tracking-widest text-white font-bold">06 68 07 21 41</span>
+                    <span className="font-header text-lg tracking-widest text-white font-bold">06 34 39 42 54</span>
                   </div>
                 </div>
                 <div className="flex flex-col items-center gap-4 text-white/70">

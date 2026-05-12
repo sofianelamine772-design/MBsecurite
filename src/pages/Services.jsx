@@ -147,14 +147,14 @@ const Services = () => {
     },
     {
       title: "Intervention",
-      subtitle: "Réponse sur Alarme",
+      subtitle: "Agents de Terrain",
       icon: Zap,
-      description: "Suite au déclenchement d'une alarme sur votre site, nos agents mobiles interviennent en un temps record pour effectuer une levée de doute physique et prendre les mesures nécessaires.",
+      description: "Nos agents mobiles interviennent en un temps record pour assurer une levée de doute physique et sécuriser vos locaux. Nous assurons une présence réactive pour gérer tout incident ou suspicion d'intrusion sur vos sites.",
       points: [
         "Levée de doute physique",
-        "Intervention rapide",
-        "Rapport détaillé",
-        "Appel des forces de l'ordre"
+        "Intervention rapide 24h/24",
+        "Rapport détaillé d'incident",
+        "Coordination avec les autorités"
       ],
       image: "/intervention-action.png",
       reverse: true
@@ -170,14 +170,14 @@ const Services = () => {
         "Gestion des foules",
         "Protection VIP"
       ],
-      image: "/evenementiel-premium.png"
+      image: "/evenementiel-custom.jpg"
     }
   ];
 
   const faqs = [
     {
       question: "Quels services de sécurité proposez-vous à Saint-Gaudens ?",
-      answer: "MB SÉCURITÉ propose une large gamme de services incluant le gardiennage physique, la sécurité incendie (SSIAP), les équipes cynophiles (maître-chien) et l'intervention mobile sur alarme 24h/24 et 7j/7."
+      answer: "MB SÉCURITÉ propose une large gamme de services incluant le gardiennage physique, la sécurité incendie (SSIAP), les équipes cynophiles (maître-chien) et l'intervention mobile de terrain 24h/24 et 7j/7."
     },
     {
       question: "Quelle est votre zone d'intervention en Occitanie ?",
@@ -192,8 +192,8 @@ const Services = () => {
       answer: "L'équipe cynophile est idéale pour la sécurisation de sites industriels ou de chantiers. Le binôme homme-chien offre une force de dissuasion visuelle et sonore inégalée, ainsi qu'une capacité de détection nocturne supérieure."
     },
     {
-      question: "En combien de temps intervenez-vous après une alarme ?",
-      answer: "Grâce à nos agents mobiles basés stratégiquement en Occitanie, nous garantissons une intervention rapide pour effectuer une levée de doute physique et sécuriser votre patrimoine immédiatement après le signal d'alarme."
+      question: "En combien de temps vos agents interviennent-ils ?",
+      answer: "Grâce à nos agents mobiles basés stratégiquement en Occitanie, nous garantissons une intervention rapide pour effectuer une levée de doute physique et sécuriser votre patrimoine immédiatement en cas d'alerte ou de suspicion d'incident."
     }
   ];
 
@@ -269,9 +269,9 @@ const Services = () => {
               Nos experts sont à votre disposition pour analyser vos besoins et vous proposer un plan de sécurité adapté.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-6">
-              <a href="tel:0668072141" className="gold-gradient text-black px-12 py-5 font-header font-bold tracking-widest uppercase text-xs flex items-center justify-center gap-3 hover:translate-y-[-5px] transition-all shadow-[0_10px_30px_rgba(255,215,0,0.3)]">
+              <a href="tel:0634394254" className="gold-gradient text-black px-12 py-5 font-header font-bold tracking-widest uppercase text-xs flex items-center justify-center gap-3 hover:translate-y-[-5px] transition-all shadow-[0_10px_30px_rgba(255,215,0,0.3)]">
                 <Phone size={18} />
-                06 68 07 21 41
+                06 34 39 42 54
               </a>
               <Link to="/zones-intervention" className="border border-white/20 hover:border-gold/50 px-12 py-5 font-header font-bold tracking-widest uppercase text-xs flex items-center justify-center gap-2 transition-all">
                 Nos zones d'intervention

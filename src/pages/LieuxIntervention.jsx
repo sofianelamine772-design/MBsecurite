@@ -122,7 +122,7 @@ const LieuxIntervention = () => {
             />
             <FAQItem 
               question="Quels sont les délais d'intervention ?" 
-              answer="La réactivité est notre priorité. Pour une intervention sur alarme, les délais dépendent de la distance, mais nous optimisons nos patrouilles pour une réponse ultra-rapide 24h/24." 
+              answer="La réactivité est notre priorité. Pour une intervention mobile, les délais dépendent de la distance, mais nous optimisons nos patrouilles pour une réponse ultra-rapide 24h/24." 
             />
             <FAQItem 
               question="Comment sont calculés les tarifs ?" 

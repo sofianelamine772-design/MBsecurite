@@ -2,7 +2,7 @@ export const citiesData = {
   "toulouse": {
     name: "Toulouse",
     description: "Expert en sécurité à Toulouse (31000). MB SÉCURITÉ protège vos entreprises et résidences.",
-    seoContent: "Nos agents interviennent sur l'ensemble de la métropole toulousaine pour des missions de surveillance physique et d'intervention sur alarme.",
+    seoContent: "Nos agents interviennent sur l'ensemble de la métropole toulousaine pour des missions de surveillance physique et d'intervention de terrain.",
     faqs: [
       { q: "Délai d'intervention à Toulouse ?", a: "Réponse en moins de 30 minutes sur la métropole toulousaine." },
       { q: "Surveillez-vous les chantiers ?", a: "Oui, surveillance humaine contre le vol et le vandalisme sur tous les quartiers." },
@@ -31,7 +31,7 @@ export const citiesData = {
       { q: "Zone de couverture ?", a: "Nous rayonnons à plus de 50km autour de Saint-Gaudens." },
       { q: "Surveillance commerces ?", a: "Oui, nous protégeons les vitrines contre les cambriolages nocturnes." },
       { q: "Sécurité événementielle ?", a: "Bien sûr, nous sécurisons mariages, fêtes et salons locaux." },
-      { q: "Levée de doute physique ?", a: "Oui, intervention immédiate suite à un appel de télésurveillance." },
+      { q: "Levée de doute physique ?", a: "Oui, intervention immédiate suite à un appel d'urgence ou de détection." },
       { q: "Tarifs locaux ?", a: "En tant qu'acteur local, nous offrons les meilleurs tarifs sur la zone." }
     ]
   },
@@ -65,7 +65,7 @@ export const citiesData = {
     seoContent: "À Tournefeuille, nous misons sur la prévention et la surveillance humaine du patrimoine immobilier.",
     faqs: [
       { q: "Surveillance résidentielle ?", a: "Oui, forfaits de surveillance pour pavillons et lotissements." },
-      { q: "Gestion alarmes nuit ?", a: "Alerte transmise instantanément à notre agent de garde." },
+      { q: "Gestion alertes nuit ?", a: "Alerte transmise instantanément à notre agent de garde." },
       { q: "Rondes de vérification ?", a: "Inspection scrupuleuse des points d'accès faibles." },
       { q: "Agrément CNAPS ?", a: "Société en parfaite conformité avec la réglementation en vigueur." },
       { q: "Compte-rendu d'état ?", a: "Rapport numérique complet envoyé après chaque passage." }
@@ -76,7 +76,7 @@ export const citiesData = {
     description: "Vigilance et ronde de nuit à Plaisance-du-Touch (31830).",
     seoContent: "MB SÉCURITÉ assure le gardiennage nocturne de vos locaux à Plaisance-du-Touch.",
     faqs: [
-      { q: "Tout type d'alarme ?", a: "Oui, interface avec tous les centres de télésurveillance." },
+      { q: "Tout type d'alerte ?", a: "Oui, interface avec tous les protocoles de sécurité." },
       { q: "Zones couvertes ?", a: "L'intégralité du secteur commercial et résidentiel." },
       { q: "Tarifs PME ?", a: "Solutions de sécurité optimisées pour les petites entreprises." },
       { q: "Levée de doute 24/7 ?", a: "Service garanti jour et nuit sur tout le secteur." },
@@ -222,7 +222,7 @@ export const citiesData = {
     faqs: [
       { q: "Rapports immédiats ?", a: "Envoi automatique par email après inspection." },
       { q: "Badge CNAPS permanent ?", a: "Oui, identification visible lors du service." },
-      { q: "Intervention alarme ?", a: "Patrouille d'intervention active 24/7." },
+      { q: "Intervention terrain ?", a: "Patrouille d'intervention active 24/7." },
       { q: "Levée de doute par agent ?", a: "Vérification physique sur site suite à alerte." },
       { q: "Sécurité industrielle ?", a: "Gardiennage haute performance pour dépôts." }
     ]

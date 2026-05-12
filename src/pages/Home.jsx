@@ -53,7 +53,6 @@ const ServicePoint = ({ title, className, description, side = 'left' }) => (
     )}
     <div className={`flex flex-col ${side === 'right' ? 'items-start' : 'items-end'}`}>
       <span className="text-xl font-header font-bold text-white tracking-widest uppercase italic">{title}</span>
-      <span className="text-[10px] uppercase text-gold/60 tracking-wider font-bold mb-1">{description}</span>
     </div>
     {side === 'left' && (
        <div className="flex items-center">
@@ -93,14 +92,6 @@ const Home = () => {
                   <span className="gold-text-gradient">SÉCURITÉ</span>
                </h1>
 
-               <div className="flex gap-4 items-center mb-10 w-full justify-center max-w-lg">
-                  <div className="hidden sm:block h-[1px] flex-1 bg-gold/30"></div>
-                  <p className="text-white/60 font-header uppercase tracking-[0.2em] text-[10px] md:text-sm lg:text-base leading-relaxed px-4">
-                    Leader régional de la surveillance humaine et du gardiennage
-                  </p>
-                  <div className="hidden sm:block h-[1px] flex-1 bg-gold/30"></div>
-               </div>
-
                <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto px-4 sm:px-0">
                   <Link to="/services" className="gold-gradient text-black px-12 py-5 font-header font-bold tracking-[0.2em] uppercase text-xs hover:translate-y-[-5px] transition-all shadow-[0_10px_30px_rgba(255,215,0,0.3)] w-full sm:w-auto">
                     Nos Solutions
@@ -110,31 +101,12 @@ const Home = () => {
                   </a>
                </div>
 
-               {/* Mini Services Overview Section */}
-               <motion.div 
-                 initial={{ opacity: 0 }}
-                 animate={{ opacity: 1 }}
-                 transition={{ delay: 1, duration: 1 }}
-                 className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8 border-t border-white/5 pt-12 max-w-5xl w-full"
-               >
-                  <div className="text-center md:text-left px-4">
-                    <h5 className="text-gold font-header text-[10px] md:text-xs uppercase tracking-widest mb-3 font-bold italic">Surveillance Humaine</h5>
-                    <p className="text-white/40 text-[9px] md:text-[10px] uppercase leading-relaxed tracking-wider">Agents qualifiés pour la protection physique de vos sites sensibles et chantiers.</p>
-                  </div>
-                  <div className="text-center md:text-left md:border-x border-white/5 md:px-8 px-4">
-                    <h5 className="text-gold font-header text-[10px] md:text-xs uppercase tracking-widest mb-3 font-bold italic">Sécurité Incendie</h5>
-                    <p className="text-white/40 text-[9px] md:text-[10px] uppercase leading-relaxed tracking-wider">Expertise SSIAP 1, 2 et 3 pour la prévention et la gestion des risques incendie.</p>
-                  </div>
-                  <div className="text-center md:text-left px-4">
-                    <h5 className="text-gold font-header text-[10px] md:text-xs uppercase tracking-widest mb-3 font-bold italic">Intervention Mobile</h5>
-                    <p className="text-white/40 text-[9px] md:text-[10px] uppercase leading-relaxed tracking-wider">Réactivité totale 24h/24 pour levée de doute et patrouilles de dissuasion.</p>
-                  </div>
-               </motion.div>
+
             </motion.div>
          </div>
       </section>
 
-      {/* Alarm & Remote Monitoring Section */}
+      {/* Human Security & Field Agents Section */}
       <section className="relative py-24 md:py-40 bg-dark-card border-y border-white/5">
         <div className="container mx-auto px-6 relative z-10 max-w-4xl text-center">
             <motion.div
@@ -144,22 +116,22 @@ const Home = () => {
               transition={{ duration: 0.8 }}
             >
               <h2 className="text-3xl md:text-6xl font-header font-bold italic uppercase mb-12 text-white leading-[1.1] tracking-tight">
-                Protégez-vous avec un <br/><span className="gold-text-gradient">système d’alarme avec télésurveillance</span>
+                Une Expertise de Terrain <br/><span className="gold-text-gradient">Agents de Sécurité & Gardiennage</span>
               </h2>
               
               <div className="space-y-12 text-white/50 font-header uppercase tracking-[0.2em] text-[10px] md:text-sm leading-relaxed max-w-3xl mx-auto">
                   <p>
-                    La sécurité de votre habitation et de vos proches est un enjeu crucial. MB SÉCURITÉ vous accompagne avec l'installation d'alarme avec télésurveillance. Nous vous proposons une gamme d’appareils de sécurité pour vous protéger contre les risques du quotidien : tentative d’intrusion, actes de vandalisme, dégagement de fumée, fuite d’eau, urgence médicale etc...
+                    La sécurité de vos établissements, de vos événements et de vos sites sensibles est notre priorité absolue. MB SÉCURITÉ vous accompagne avec le déploiement d'agents de sécurité professionnels et hautement qualifiés. Nous vous proposons des solutions de surveillance humaine sur mesure pour vous protéger contre les risques du quotidien : vols, actes de malveillance, intrusions et gestion des flux.
                   </p>
                   
                   <div className="h-px w-20 bg-gold/20 mx-auto"></div>
                   
                   <p className="text-white/70 italic bg-white/[0.02] p-8 md:p-12 border border-white/5 rounded-sm">
-                    Notre centre de télésurveillance réagit au moindre déclenchement d'alarme 24h/24 et 7j/7, même si vous n’êtes pas sur place pour prévenir les services d’urgence, grâce à notre numéro réservé, offrir une vérification par image et gagner ainsi des secondes vitales.
+                    Nos agents de sécurité terrain et nos équipes de gardiennage assurent une présence dissuasive et réactive 24h/24 et 7j/7. Que ce soit pour la sécurisation de magasins, le contrôle d'accès événementiel ou la surveillance de chantiers, nous garantissons un professionnalisme exemplaire et une vigilance constante.
                   </p>
                   
                   <p>
-                    Vous aurez également la possibilité de contrôler votre système d'alarme à distance depuis notre application mobile dédiée : intuitive et simple d’emploi, elle permet d’activer et désactiver vos alarmes, de prendre des photos pendant votre absence, d’être informé en temps réel si les portes et fenêtres sont ouvertes.
+                    Nous adaptons chaque dispositif à la spécificité de votre secteur d'activité. Nos experts réalisent un audit de vos besoins pour mettre en place des rondes de surveillance, du filtrage ou de la sécurité incendie, vous assurant ainsi une protection globale et une sérénité totale pour vos biens et les personnes.
                   </p>
               </div>
               
@@ -193,21 +165,21 @@ const Home = () => {
                   <img src="/logo.png" alt="Logo MB Sécurité" className="w-full h-auto drop-shadow-2xl transition-all duration-700 group-hover:scale-105 relative z-20" />
                </motion.div>
 
-               <ServicePoint title="Sécurité Incendie" description="Prévention & SSI" className="top-10 left-[5%]" side="left" />
-               <ServicePoint title="Équipe Cynophile" description="Conducteur & Chien" className="top-1/2 -translate-y-1/2 left-[0%]" side="left" />
-               <ServicePoint title="Événementiel" description="Manifestations & VIP" className="bottom-10 left-[10%]" side="left" />
-               <ServicePoint title="Gardiennage" description="Protection Physique" className="top-20 right-[5%]" side="right" />
-               <ServicePoint title="Intervention" description="Réponse sur Alarme" className="bottom-1/2 right-[0%]" side="right" />
+               <ServicePoint title="Sécurité Incendie" className="top-10 left-[5%]" side="left" />
+               <ServicePoint title="Équipe Cynophile" className="top-1/2 -translate-y-1/2 left-[0%]" side="left" />
+               <ServicePoint title="Événementiel" className="bottom-10 left-[10%]" side="left" />
+               <ServicePoint title="Gardiennage" className="top-20 right-[5%]" side="right" />
+               <ServicePoint title="Intervention" className="bottom-1/2 right-[0%]" side="right" />
             </div>
 
             {/* Mobile/Tablet Layout - Premium Grid */}
             <div className="lg:hidden grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
                {[
-                  { title: "Sécurité Incendie", desc: "Prévention & SSI", icon: <Shield size={28} /> },
-                  { title: "Équipe Cynophile", desc: "Conducteur & Chien", icon: <CheckCircle2 size={28} /> },
-                  { title: "Événementiel", desc: "Manifestations & VIP", icon: <Bell size={28} /> },
-                  { title: "Gardiennage", desc: "Protection Physique", icon: <Lock size={28} /> },
-                  { title: "Intervention", desc: "Réponse sur Alarme", icon: <Zap size={28} /> }
+                  { title: "Sécurité Incendie", icon: <Shield size={28} /> },
+                  { title: "Équipe Cynophile", icon: <CheckCircle2 size={28} /> },
+                  { title: "Événementiel", icon: <Bell size={28} /> },
+                  { title: "Gardiennage", icon: <Lock size={28} /> },
+                  { title: "Intervention", icon: <Zap size={28} /> }
                ].map((item, idx) => (
                   <motion.div 
                     key={idx}
@@ -220,8 +192,7 @@ const Home = () => {
                         {item.icon}
                      </div>
                      <div>
-                        <h4 className="font-header font-bold text-white uppercase italic text-lg mb-2">{item.title}</h4>
-                        <p className="text-[10px] text-white/40 uppercase tracking-[0.2em] font-bold">{item.desc}</p>
+                        <h4 className="font-header font-bold text-white uppercase italic text-lg">{item.title}</h4>
                      </div>
                   </motion.div>
                ))}
@@ -232,58 +203,46 @@ const Home = () => {
          </div>
       </section>
 
-      {/* Trust Banner */}
-      <section id="propos" className="py-24 bg-dark-card border-y border-white/5 relative">
-         <div className="container mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-y-16 gap-x-8 text-center">
-            {[
-               { label: "Gardiens", val: "25", suffix: "+" },
-               { label: "Interventions/Mois", val: "120", suffix: "+" },
-               { label: "Sites Protégés", val: "50", suffix: "+" },
-               { label: "Satisfaction", val: "99", suffix: "%" }
-            ].map((stat, i) => (
-              <div key={i} className="flex flex-col items-center">
-                <Counter value={stat.val} suffix={stat.suffix} />
-                <div className="text-[9px] md:text-[10px] font-header uppercase tracking-widest text-white/40 font-bold">{stat.label}</div>
-              </div>
-            ))}
-         </div>
-      </section>
+
 
       {/* CTA Footer */}
       <section id="contact" className="py-24 md:py-40 bg-black relative">
          <div className="container mx-auto px-6 text-center max-w-4xl">
             <h4 className="text-4xl md:text-7xl font-header font-bold mb-12 italic uppercase text-white leading-none">VOTRE SÉCURITÉ <br/><span className="gold-text-gradient underline decoration-gold/30 underline-offset-8">NOTRE MISSION</span></h4>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-20">
-               <a href="tel:0668072141" className="bg-bg-card border border-gold/20 p-10 hover:border-gold transition-all block group rounded-sm shadow-xl">
-                  <Phone className="mx-auto mb-6 text-gold group-hover:scale-110 transition-all" size={32} />
-                  <span className="block font-header text-xl md:text-2xl mb-2 uppercase text-white">Appelez-nous</span>
-                  <span className="text-gold font-header text-2xl md:text-3xl font-bold">06 68 07 21 41</span>
-               </a>
-               <a href="mailto:contact@mbsecurite.fr" className="bg-bg-card border border-gold/20 p-10 hover:border-gold transition-all block group rounded-sm shadow-xl">
-                  <Mail className="mx-auto mb-6 text-gold group-hover:scale-110 transition-all" size={32} />
-                  <span className="block font-header text-xl md:text-2xl mb-2 uppercase text-white">Email direct</span>
-                  <span className="text-gold font-header text-lg md:text-xl truncate uppercase font-bold">contact@mbsecurite.fr</span>
-               </a>
-            </div>
-            
-            <div className="flex flex-col md:flex-row justify-between items-center gap-10 md:gap-10 border-t border-white/5 pt-12">
-                <div className="text-center md:text-left">
-                  <p className="text-white/20 font-header uppercase tracking-[0.3em] text-[8px] md:text-[9px] mb-2">MB SÉCURITÉ - TOUS DROITS RÉSERVÉS - 2026</p>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-16 max-w-7xl mx-auto">
+            <a href="tel:0634394254" className="bg-bg-card border border-gold/20 p-8 md:p-12 hover:border-gold transition-all block group rounded-sm shadow-xl text-center">
+              <Phone className="mx-auto mb-6 text-gold group-hover:scale-110 transition-all" size={32} />
+              <span className="block font-header text-xl md:text-2xl mb-4 uppercase text-white font-black tracking-widest">Appelez-nous</span>
+              <span className="text-gold font-header text-2xl sm:text-3xl md:text-4xl lg:text-3xl xl:text-4xl font-black tracking-tighter block whitespace-nowrap">06 34 39 42 54</span>
+            </a>
+            <a href="mailto:contact@mbsecurite.fr" className="bg-bg-card border border-gold/20 p-8 md:p-12 hover:border-gold transition-all block group rounded-sm shadow-xl text-center overflow-hidden">
+              <Mail className="mx-auto mb-6 text-gold group-hover:scale-110 transition-all" size={32} />
+              <span className="block font-header text-xl md:text-2xl mb-4 uppercase text-white font-black tracking-widest">Email direct</span>
+              <span className="text-gold font-header text-sm sm:text-base md:text-xl lg:text-lg xl:text-xl font-black tracking-tight uppercase block">contact@mbsecurite.fr</span>
+            </a>
+          </div>
 
-                </div>
-                <div className="flex flex-wrap justify-center gap-6 md:gap-8">
-                  <Link to="/zones-intervention" className="text-gold/40 hover:text-gold transition-all font-header uppercase tracking-[0.3em] text-[8px] md:text-[9px] border-b border-gold/10 pb-1">
-                    Zones
-                  </Link>
-                  <Link to="/statut-legal" className="text-gold/40 hover:text-gold transition-all font-header uppercase tracking-[0.3em] text-[8px] md:text-[9px] border-b border-gold/10 pb-1">
-                    Statut Légal
-                  </Link>
-                  <Link to="/mentions-legales" className="text-gold/40 hover:text-gold transition-all font-header uppercase tracking-[0.3em] text-[8px] md:text-[9px] border-b border-gold/10 pb-1">
-                    Mentions
-                  </Link>
-               </div>
+          <div className="mb-12 p-8 border border-gold/10 bg-gold/5 rounded-sm max-w-4xl mx-auto">
+            <p className="text-gold/90 font-header uppercase tracking-widest text-[10px] md:text-xs leading-relaxed font-bold italic text-center">
+              &quot;L&apos;autorisation d&apos;exercice ne confère aucune prérogative de puissance publique à l&apos;entreprise ou aux personnes qui en bénéficient.&quot;
+              <br />
+              <span className="text-[8px] md:text-[10px] mt-2 block opacity-60 font-normal">(Article L612-14 du Code de la Sécurité Intérieure)</span>
+            </p>
+          </div>
+          <div className="flex flex-col md:flex-row justify-between items-center gap-10 border-t border-white/5 pt-8">
+            <div className="text-center md:text-left">
+              <p className="text-white/20 font-header uppercase tracking-[0.3em] text-[8px] md:text-[9px]">MB SÉCURITÉ - TOUS DROITS RÉSERVÉS - 2026</p>
             </div>
+            <div className="flex flex-wrap justify-center gap-6 md:gap-8">
+              <Link to="/zones-intervention" className="text-gold/40 hover:text-gold transition-all font-header uppercase tracking-[0.3em] text-[8px] md:text-[9px] border-b border-gold/10 pb-1">
+                Zones
+              </Link>
+              <Link to="/mentions-legales" className="text-gold/40 hover:text-gold transition-all font-header uppercase tracking-[0.3em] text-[8px] md:text-[9px] border-b border-gold/10 pb-1">
+                Mentions
+              </Link>
+            </div>
+          </div>
          </div>
       </section>
     </div>

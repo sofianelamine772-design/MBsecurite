@@ -29,7 +29,7 @@ const SocialSection = () => {
 
           <div className="flex flex-wrap justify-center gap-6 md:gap-10">
             <motion.a 
-              href="https://facebook.com/profile.php?id=61556096538356" 
+              href="https://www.facebook.com/people/MB-s%C3%A9curit%C3%A9/61589028172495/" 
               target="_blank" 
               rel="noopener noreferrer"
               whileHover={{ scale: 1.02, y: -8 }}

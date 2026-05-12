@@ -24,8 +24,7 @@ const Navbar = () => {
   const menuItems = [
     { name: 'Services', to: '/services' },
     { name: 'Zones', to: '/zones-intervention' },
-    { name: 'Recrutement', to: '/recrutement' },
-    { name: 'Statut Légal', to: '/statut-legal' }
+    { name: 'Recrutement', to: '/recrutement' }
   ];
 
   return (
@@ -60,11 +59,11 @@ const Navbar = () => {
               </Link>
             ))}
             <a 
-              href="tel:0668072141" 
+              href="tel:0634394254" 
               className="gold-gradient px-6 py-2 rounded-sm text-black font-header font-bold text-[10px] tracking-widest uppercase flex items-center gap-2 hover:scale-105 transition-all shadow-[0_0_20px_rgba(255,215,0,0.2)]"
             >
               <Phone size={14} />
-              06 68 07 21 41
+              06 34 39 42 54
             </a>
           </div>
 
@@ -120,7 +119,7 @@ const Navbar = () => {
                 className="mt-12 w-full max-w-xs"
               >
                 <a 
-                  href="tel:0668072141" 
+                  href="tel:0634394254" 
                   className="gold-gradient w-full py-5 rounded-sm text-black font-header font-bold text-xs tracking-[0.3em] uppercase flex items-center justify-center gap-3 shadow-[0_10px_40px_rgba(255,215,0,0.2)]"
                 >
                   <Phone size={18} />
