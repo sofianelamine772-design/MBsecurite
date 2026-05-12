@@ -181,7 +181,7 @@ const Services = () => {
     },
     {
       question: "Quelle est votre zone d'intervention en Occitanie ?",
-      answer: "Basés à Saint-Gaudens, nous intervenons dans toute la Haute-Garonne (31), notamment à Toulouse, Muret et Labège, ainsi que dans les départements limitrophes comme les Hautes-Pyrénées (65) et l'Ariège (09)."
+      answer: "Basés à Toulouse, nous intervenons dans toute la Haute-Garonne (31), notamment à Saint-Gaudens, Muret et Labège, ainsi que dans les départements limitrophes comme les Hautes-Pyrénées (65) et l'Ariège (09)."
     },
     {
       question: "Vos agents SSIAP sont-ils qualifiés ?",

@@ -23,7 +23,7 @@ const MentionsLegales = () => {
             <ul className="list-none space-y-2 mt-4 border-l-2 border-gold/20 pl-6">
               <li><span className="text-gold font-bold">MB SÉCURITÉ</span></li>
               <li>Forme juridique : SASU</li>
-              <li>Siège social : Saint-Gaudens, 31800</li>
+              <li>Siège social : 16 Rue Saint-Antoine du T, 31000 Toulouse</li>
               <li>Numéro SIREN : 99035090200013</li>
 
               <li>Directeur de la publication : MB Sécurité</li>
