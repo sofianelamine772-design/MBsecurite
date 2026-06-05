@@ -84,7 +84,7 @@ const Home = () => {
               className="flex flex-col items-center"
             >
                <div className="mb-6">
-                  <span className="inline-block px-4 py-1 border border-gold/30 text-gold text-[9px] md:text-[10px] font-header uppercase tracking-[0.4em] bg-gold/5 backdrop-blur-sm">Toulouse & Occitanie</span>
+                  <span className="inline-block px-4 py-1 border border-gold/30 text-gold text-[9px] md:text-[10px] font-header uppercase tracking-[0.4em] bg-gold/5 backdrop-blur-sm">Saint & Occitanie</span>
                </div>
                
                <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-[140px] font-header font-bold leading-[0.9] mb-8 italic tracking-tighter uppercase text-white drop-shadow-2xl">
